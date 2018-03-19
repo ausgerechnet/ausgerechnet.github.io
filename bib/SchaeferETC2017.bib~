@@ -1,0 +1,12 @@
+
+@article{schafer_japans_2017,
+	title = {Japan’s 2014 {General} {Election}: {Political} {Bots}, {Right}-{Wing} {Internet} {Activism} and {PM} {Abe} {Shinzō}’s {Hidden} {Nationalist} {Agenda}},
+	volume = {5},
+	issn = {2167-6461},
+	abstract = {In this article, we present results on the identification and behavioral analysis of social bots in a sample of 542,584 tweets, collected before and after Japan's 2014 General Election. Typical forms of bot activity include massive retweeting and repeated posting of (nearly) the same message, sometimes used in combination. We focus on the second method and present (i) a case study on several patterns of bot activity and (ii) methodological considerations on the automatic identification of such patterns and the prerequisite near-duplicate detection. Moreover, (iii) we give qualitative insights into the purposes behind the usage of social/political bots. We argue that it was in the latency of the semi-public sphere of social media – and not in the visible or manifest public sphere (official campaign platform, mass media) – where Abe's hidden nationalist agenda interlocked and overlapped with the one propagated by organizations such as {\textbackslash}emphNippon Kaigi and Internet right-wingers (netto uyo) during the election campaign, the latter potentially forming an enormous online support army of Abe's agenda.},
+	number = {4},
+	journal = {Big Data},
+	author = {Schäfer, Fabian and Evert, Stefan and Heinrich, Philipp},
+	year = {2017},
+	pages = {1--16}
+}

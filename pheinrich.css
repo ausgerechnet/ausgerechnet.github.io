@@ -1,6 +1,7 @@
 #portrait {
     float: right;
-    margin-left: 1em;
+    margin-left: 5%;
+    margin-right: 5%;
     max-width: 38%;
 }
 
@@ -26,6 +27,10 @@ a:link {
 
 a:visited {
     color: #063868;
+}
+
+a:hover {
+    background-color: #AED7FF;
 }
 
 header.navigation {
@@ -65,7 +70,7 @@ nav a {
     float: left;
     display: block;
     text-align: center;
-    padding: 0.5em 0.75em;
+    padding: 0.5em 1em;
     text-decoration: none;
 }
 
@@ -100,4 +105,5 @@ footer {
     background-color: #4c4cff;
     color: #AED7FF;
     padding: 0.5em 0.75em;
+    text-align: right;
 }

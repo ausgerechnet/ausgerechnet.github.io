@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="author" content="Philipp Heinrich">
     <meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=yes">
-    <title>Philipp Heinrich</title>
+    <title>teaching</title>
     <link rel="stylesheet" href="pheinrich.css">
   </head>
   
@@ -13,13 +13,12 @@
     <nav>
     <a href="index.html">home</a>
     <a href="publications.html">publications</a>
-    <a href="teaching.html">teaching</a>
     </nav>
   </header>
 
   <body>
-    <h2>Welcome</h2> <img src="pheinrich_hiking_maurice.jpg"
-    id="portrait"/>
+    <h2>Welcome</h2>
+    <img src="pheinrich_hiking_maurice.jpg" id="portrait"/>
     <p style="margin-left:5%; margin-right:5%;">
       Hey there,
     </p>
@@ -29,15 +28,14 @@
       econometrics), English linguistics, and philosophy. I am working
       as a researcher with
       the <a href="http://www.linguistik.fau.de/"> Corpus and
-      Computational Linguistics Group</a>
+      Computational Linguistics Group </a>
       at <a href="https://www.fau.eu/">
       Friedrich-Alexander-Universität Erlangen-Nürnberg </a> (FAU).
     </p>
 
     <p style="margin-left:5%; margin-right:5%;">
       Feel free to browse these websites if you want to learn more
-      about my <a href="publications.html">research</a>
-      and <a href="teaching.html">teaching</a> activities.
+      about my research and teaching activities.
     </p>
 
     <h2 id="contact">Contact</h2>
@@ -62,7 +60,7 @@
     </p>
 
     <footer>
-      last update: March 19, 2018
+      last update: March 18, 2018
     </footer>
   </body>
 </html>
