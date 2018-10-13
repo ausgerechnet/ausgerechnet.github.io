@@ -6,16 +6,20 @@ in 09/2015
 * 12/2015–01/2016
   - Strasbourg, France
   - Paris, France
+** Paris-Munich
 * 02–03/2016
   - La Réunion
+** Nuremberg-Paris-St.Dénis [return]
 * 03/2016
   - Vilnius, Lithuania
+** Memmimgen-Vilnius [return]
 * 04/2016
   - Leipzig, Germany
 * 05/2016
   - Prague, Czech Republic
 * 07/2016
   - Cluj, Romania
+** Nuremberg-Cluj [return]
 * 07/2016
   - Weiterstadt, Germany
 * 08/2016
@@ -28,21 +32,33 @@ in 09/2015
   - Amsterdam, Netherlands
   - Hamburg, Germany
   - Berlin, Germany
+** Memmingen-Palermo
+** Palermo-Barcelona
+** Barcelona-Madrid
+** Madrid-Amsterdam
 * 11/2016
   - Sofia, Bulgaria
+** Memmingen-Sofia [return]
 * 12/2016–01/2017
   - Chiang Mai, Thailand
+** Munich-Bangkok [return]
+** Bangkok-ChiangMai [return]
 * 01/2017
   - Warth, Austria
 * 03–04/2017
   - La Réunion
   - Mauritius
+** Nuremberg-Paris-St.Dénis [return]
+** St.Dénis-Mahébourg [return]
 * 04/2017
   - Budapest, Hungary
+** Nuremberg-Budapest [return]
 * 05/2017
   - Prague, Czech Republic
 * 06/2017
   - Galway, Ireland
+** Nuremberg-Manchester-Dublin
+** Dublin-Birmingham-Nuremberg
 * 06/2017
   - Rinnen, Austria
 * 06–07/2017
@@ -53,15 +69,22 @@ in 09/2015
   - Cologne, Germany
 * 08/2017
   - Stockholm, Sweden
+** Nuremberg-Munich-Stockholm
+** Stockholm-Nuremberg
 * 09–10/2017
   - San José, CA, USA
   - Las Vegas, NV, USA
   - Los Angeles, CA, USA
   - San Francisco, CA, USA
+** Frankfurt-Rejkjavic-SanFrancisco
+** SanFrancisco-Frankfurt
 * 10–11/2017
   - Lissabon, Portugal
+** Nuremberg-London-Lissabon
+** Lissabon-Porto-Nuremberg
 * 11/2017
   - Warsaw, Poland
+** Memmingen-Warsaw [return]
 * 12/2017–01/2018
   - Prague, Czech Repubic
   - Dresden, Germany
@@ -70,24 +93,33 @@ in 09/2015
   - Radstadt, Austria
 * 03/2018
   - Montpellier, France
+** Nuremberg-Paris-Montpellier
 * 03–04/2018
   - La Réunion
   - Mauritius
+** Montpellier-Paris-St.Dénis
+** St.Pierre-Mahebourg [return]
 * 04/2018
   - Bielefeld, Germany
 * 05/2018
   - Miyazaki, Japan
+** Nuremberg-Paris-Tokyo-Miyazaki [return]
 * 06/2018
   - Weiterstadt, Germany
 * 07/2018
   - Amsterdam, Netherlands
+** Nuremberg-Amsterdam [return]
 * 07/2018
   - Marseille, France
   - Schruns, Austria
   - Wolkenstein in Gröden, Italy
+** Nuremberg-Marseille
 * 08/2018
   - Rinnen, Austria
 * 09–10/2018
   - Seoul, Korea
   - Takamatsu, Japan
   - Osaka, Japan
+** Munich-Dubai-Seoul [return]
+** Seoul-Takamatsu
+** Osaka-Seoul
