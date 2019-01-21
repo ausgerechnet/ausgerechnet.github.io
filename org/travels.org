@@ -97,8 +97,10 @@ in 09/2015
 * 03–04/2018
   - La Réunion
   - Mauritius
-** Montpellier-Paris-St.Dénis
-** St.Pierre-Mahebourg [return]
+** Montpellier-Paris-St.Dénis					    :private:
+** St.Pierre-Mahebourg [return]					    :private:
+** St.Dénis-Paris						    :private:
+** Lyon-Nuremberg						    :private:
 * 04/2018
   - Bielefeld, Germany
 * 05/2018
@@ -108,12 +110,12 @@ in 09/2015
   - Weiterstadt, Germany
 * 07/2018
   - Amsterdam, Netherlands
-** Nuremberg-Amsterdam [return]
+** Nuremberg-Amsterdam [return]					    :private:
 * 07/2018
   - Marseille, France
   - Schruns, Austria
   - Wolkenstein in Gröden, Italy
-** Nuremberg-Marseille
+** Nuremberg-Marseille						    :private:
 * 08/2018
   - Rinnen, Austria
 * 09–10/2018
@@ -125,6 +127,17 @@ in 09/2015
 ** Osaka-Seoul
 * 10/2018
   - Lyon, France
-** Nuremberg-Lyon [return]
+** Nuremberg-Lyon [return]					    :private:
 * 10–11/2018
   - Brussels, Belgium
+* 12/2018
+  - Dublin, Ireland
+** Munich-Dublin						    :private:
+** Dublin-Frankfurt						    :private:
+* 12/2018–01/2019
+  - Montréal, Canada
+  - Mont-Tremblant, Canada
+** Frankfurt-Montréal [return]				:private:compensated:
+* 01/2019
+  - Santiago de Compostella, Spain
+** Munich-Madrid-SantiagoDeCompostella [return]
