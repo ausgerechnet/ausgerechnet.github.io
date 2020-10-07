@@ -1,33 +1,24 @@
-import bibtexparser
-from bibtexparser.bparser import BibTexParser
-from bibtexparser.bwriter import BibTexWriter
-from bibtexparser.bibdatabase import BibDatabase
-
+import re
+import os
 from glob import glob
 from pandas import DataFrame
-import re
+from collections import defaultdict
+from datetime import date
 
-# READ #########################################################################
+import bibtexparser
+from bibtexparser.bparser import BibTexParser
+from bibtexparser.bibdatabase import BibDatabase
+from bibtexparser.bwriter import BibTexWriter
 
+
+# SET OPTIONS
 parser = BibTexParser(common_strings=True)
 parser.ignore_nonstandard_types = False
 parser.homogenise_fields = True
 
-paths_in = glob("bib/*.bib")
-paths_in.sort()
 
-f_list = str()
-for p in paths_in:
-    with open(p, "rt") as f:
-        f_list += f.read() + "\n"
-
-db = bibtexparser.loads(f_list, parser)
-
-
-# TRANSFORM ####################################################################
-
-new_entries = list()
-for entry in db.entries:
+def formatter(entry):
+    """ simple preprocessor to consistencize entries """
 
     for key in entry:
 
@@ -40,26 +31,306 @@ for entry in db.entries:
         if key == 'title' or key == 'booktitle':
 
             # capitalize words to avoid NATBIB "feature"
-            row = entry[key].split(" ")
+            row = re.sub("{|}", "", entry[key])
+            row = row.split(" ")
             row = " ".join([
                 "{" + r + "}" if (
-                    any(x.isupper() for x in r) and not r.startswith("{")
+                    any(x.isupper() for x in r)
                 ) else r for r in row
             ])
             entry[key] = row
 
-    # don't append comments
-    if entry['ENTRYTYPE'] != "comment":
-        new_entries.append(entry)
+        if key == 'pages':
+            row = re.sub(r"\s*[-–]+\s*", "-", entry[key])
+            row = re.sub("-", "–", row)
+            entry[key] = row
+
+    return entry
+
+
+def author2html(author, special="Heinrich, Philipp"):
+    """ format authors HTML-style """
+    author = author.replace(" and ", "; ")
+    if special is not None:
+        author = author.replace(special, "<u>" + special + "</u>")
+    return author
+
+
+def article2html(entry):
+    """ HTML formatter for @article
+    required: author, title, journal, year
+    optional: volume, number, pages, month, note
+
+    style: author (year). <b>title</b>. <i>journal</i> <b>volume</b>(issue)?: pages.
+    """
+
+    volume_number = "<b>" + entry['volume'] + "</b>"
+    if "number" in entry.keys():
+        volume_number += "(" + entry['number'] + ")"
+    return " ".join([
+        author2html(entry['author']),
+        "(" + entry['year'] + ").",
+        "<b>" + entry['title'] + "</b>.",
+        "<i>" + entry['journal'] + "</i>",
+        volume_number + ":",
+        entry['pages'] + "."
+    ])
+
+
+def book2html(entry):
+    """ HTML formatter for @book and @proceedings
+
+    @book
+    required: author or editor, title, publisher, year
+    optional: volume or number, series, address, edition, month, note
+
+    @proceedings
+    required: title, year
+    optional: editor, volume or number, series, address, publisher,
+              note, month, organization
+
+    style:  author / editor (year). <b>title</b>. address: publisher.
+    """
+
+    if "author" in entry.keys():
+        author = author2html(entry['author'])
+    elif "editor" in entry.keys():
+        author = author2html(entry['editor'])
+
+    return " ".join([
+        author,
+        "(" + entry['year'] + ").",
+        "<b>" + entry['title'] + "</b>.",
+        entry['address'] + ":",
+        entry['publisher'] + "."
+    ])
+
+
+def inproceedings2html(entry):
+    """ HTML formatter for @inproceedings
+    required: author, title, booktitle, year
+    optional: editor, volume or number, series, pages, address, month,
+              organization, publisher, note
+
+    style: author (year). <b>title</b>. 'In' <i>booktitle</i>, 'pages' pages, address.
+    """
+    return " ".join([
+        author2html(entry['author']),
+        "(" + entry['year'] + ").",
+        "<b>" + entry['title'] + "</b>.",
+        "In <i>" + entry['booktitle'] + "</i>,",
+        "pages " + entry['pages'] + ",",
+        entry['address'] + "."
+    ])
+
+
+def incollection2html(entry):
+    """ HTML formatter for @incollection
+    required: author, title, booktitle, publisher, year
+    optional: editor, volume or number, series, type, chapter,
+              pages, address, edition, month, note
+
+    style: author (year). <b>title</b>. 'In' <i>booktitle</i>,
+           'edited by' editor, 'pages' pages, address: publisher.
+    """
+    return " ".join([
+        author2html(entry['author']),
+        "(" + entry['year'] + ").",
+        "<b>" + entry['title'] + "</b>.",
+        "In <i>" + entry['booktitle'] + "</i>,",
+        "edited by " + author2html(entry['editor']) + ",",
+        "pages " + entry['pages'] + ",",
+        entry['address'] + ":",
+        entry['publisher'] + "."
+    ])
+
+
+def misc2html(entry):
+    """ HTML formatter for @misc
+    required: none
+    optional: author, title, howpublished, month, year, note
+
+    style: author (month, year). <b>title</b>. <i>howpublished</i>.
+    """
+    return " ".join([
+        author2html(entry['author']),
+        "(" + entry['year'] + ").",
+        "<b>" + entry['title'] + "</b>.",
+        "<i>" + entry['howpublished'] + "</i>."
+    ])
+
+
+def bibtex2html(entry):
+    """ converts an entry to HTML """
+
+    out = None
+
+    # Journal Articles (@article)
+    if entry['ENTRYTYPE'] == 'article':
+        out = article2html(entry)
+
+    # Edited Volumes (@book or @proceedings)
+    elif entry['ENTRYTYPE'] == 'book' or entry['ENTRYTYPE'] == 'proceedings':
+        out = book2html(entry)
+
+    # Articles in Conference Proceedings / SharedTasks (@inproceedings)
+    elif entry['ENTRYTYPE'] == 'inproceedings':
+        out = inproceedings2html(entry)
+
+    # Articles in Collections (@incollection)
+    elif entry['ENTRYTYPE'] == 'incollection':
+        out = incollection2html(entry)
+
+    # Talks and Presentations (@misc)
+    elif entry['ENTRYTYPE'] == 'misc':
+        out = misc2html(entry)
+
+    else:
+        raise NotImplementedError(
+            "ENTRYTYPE %s not supported" % entry['ENTRYTYPE']
+        )
+
+    # remove capitalizers
+    out = re.sub("{|}", "", out)
+
+    # links
+    out += " ["
+
+    # bib
+    out += '<a href="%s">bib</a>' % "/".join(["bib", entry['ID'] + ".bib"])
+
+    # website
+    if 'url' in entry.keys():
+        out += ', <a href="%s">web</a>' % entry['url']
+
+    # PDFs
+    res = {
+        'abstract': "pdf/" + entry['ID'] + "_abstract.pdf",
+        'pdf': "pdf/" + entry['ID'] + ".pdf",
+        'slides': "pdf/" + entry['ID'] + "_slides.pdf",
+        'poster': "pdf/" + entry['ID'] + "_poster.pdf"
+    }
+
+    for key in ['abstract', 'pdf', 'slides', 'poster']:
+        if os.path.isfile(res[key]):
+            out += ', <a href="%s">%s</a>' % (res[key], key)
+
+    out += "]\n"
+
+    # unescape stuff
+    out = out.replace("``", "&ldquo;")
+    out = out.replace("''", "&rdquo;")
+    out = out.replace(r"\_", "_")
+    out = out.replace(r"\&", "&")
+
+    return out
+
+
+def read_many_bibs(paths_in, consistencize=True):
+
+    # READ many bibs, convert to str
+    paths_in.sort()
+    txt_list = str()
+    for p in paths_in:
+        with open(p, "rt", encoding='utf-8') as f:
+            try:
+                txt_list += f.read() + "\n"
+            except UnicodeDecodeError:
+                print(p)
+
+    # read all bib strings
+    db = bibtexparser.loads(txt_list, parser)
+    assert len(db.entries) == len(paths_in)
+
+    # TRANSFORM
+    if consistencize:
+
+        entries = list()
+        for entry in db.entries:
+            # don't append comments
+            if entry['ENTRYTYPE'] != "comment":
+                entries.append(formatter(entry))
+
+        # new database
+        db = BibDatabase()
+        db.entries = entries
+
+    return db
+
+
+def order_db(db, order="ENTRYTYPE"):
+
+    col = defaultdict(BibDatabase)
+    for entry in db.entries:
+
+        if order == "ENTRYTYPE":
+            # special case: SharedTasks
+            if "note" in entry.keys() and re.search(
+                    r"shared\s?task", entry['note'].lower()
+            ):
+                col['sharedtask'].entries.append(entry)
+            else:
+                col[entry['ENTRYTYPE']].entries.append(entry)
+
+        if order == 'date':
+            if 'date' in entry.keys():
+                date = entry['date']
+            else:
+                date = entry['year']
+            col[date].entries.append(entry)
+
+    return col
 
 
 # WRITE ########################################################################
-db = BibDatabase()
-db.entries = new_entries
-writer = BibTexWriter()
-with open('publications-pheinrich.bib', 'w') as bibfile:
-    bibfile.write(writer.write(db))
+paths_in = glob("bib/*.bib")
+db = read_many_bibs(paths_in)
 
-# convert to df
+# convert to .tsv
 df = DataFrame(db.entries)
 df.to_csv("publications-pheinrich.tsv", sep="\t")
+
+# convert to .bib
+writer = BibTexWriter()
+db_ordered = order_db(db)
+with open('publications-pheinrich.bib', 'wt') as bibfile:
+    for key in sorted(db_ordered.keys()):
+        bibfile.write("%" * 60 + "\n% " + key + "\n" + "%" * 60 + "\n")
+        db_ordered_dates = order_db(db_ordered[key], 'date')
+        for key2 in sorted(db_ordered_dates.keys(), reverse=True):
+            bibfile.write(writer.write(db_ordered_dates[key2]))
+
+
+# convert to .html
+types = {
+    "article": 'Journal Articles',
+    "book": 'Edited Volumes',
+    "proceedings": 'Edited Conference Proceedings',
+    "inproceedings": 'Articles in Conference Proceedings',
+    "incollection": 'Articles in Collections',
+    "sharedtask": 'Shared Tasks',
+    "misc": 'Talks and Presentations'
+}
+
+if len(set(db_ordered.keys()).union(set(types.keys()))) != len(types.keys()):
+    raise ValueError
+
+with open('publications-pheinrich.html', 'wt') as htmlfile:
+    htmlfile.write("<html>\n")
+    for key in types.keys():
+        htmlfile.write("<h3>" + types[key] + "</h3>\n")
+        db_ordered_dates = order_db(db_ordered[key], 'date')
+        htmlfile.write("<ul>\n")
+        for key2 in sorted(db_ordered_dates.keys(), reverse=True):
+            for bib in db_ordered_dates[key2].entries:
+                htmlfile.write("<li> " + bibtex2html(bib))
+        htmlfile.write("</ul>\n")
+    htmlfile.write("<footer>\n")
+    htmlfile.write("last update: " + date.today().strftime("%B %d, %Y"))
+    htmlfile.write("</footer>\n")
+    htmlfile.write("</html>")
+
+# TODO: consistencize @misc (howpublished, address, type of presentation)
+# TODO: consistencize @inproceedings (location / address)
+# TODO: export
+# TODO: identify peer-reviewed abstracts
