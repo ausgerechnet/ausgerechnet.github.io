@@ -4,6 +4,7 @@ from glob import glob
 from pandas import DataFrame
 from collections import defaultdict
 from datetime import date
+from argparse import ArgumentParser
 
 import bibtexparser
 from bibtexparser.bparser import BibTexParser
@@ -283,54 +284,74 @@ def order_db(db, order="ENTRYTYPE"):
 
 
 # WRITE ########################################################################
-paths_in = glob("bib/*.bib")
-db = read_many_bibs(paths_in)
 
-# convert to .tsv
-df = DataFrame(db.entries)
-df.to_csv("publications-pheinrich.tsv", sep="\t")
+def main(paths_in, path_tsv, path_bib, path_html):
 
-# convert to .bib
-writer = BibTexWriter()
-db_ordered = order_db(db)
-with open('publications-pheinrich.bib', 'wt') as bibfile:
-    for key in sorted(db_ordered.keys()):
-        bibfile.write("%" * 60 + "\n% " + key + "\n" + "%" * 60 + "\n")
-        db_ordered_dates = order_db(db_ordered[key], 'date')
-        for key2 in sorted(db_ordered_dates.keys(), reverse=True):
-            bibfile.write(writer.write(db_ordered_dates[key2]))
+    db = read_many_bibs(paths_in)
 
+    # convert to .tsv
+    df = DataFrame(db.entries)
+    df.to_csv(path_tsv, sep="\t")
 
-# convert to .html
-types = {
-    "article": 'Journal Articles',
-    "book": 'Edited Volumes',
-    "proceedings": 'Edited Conference Proceedings',
-    "inproceedings": 'Articles in Conference Proceedings',
-    "incollection": 'Articles in Collections',
-    "sharedtask": 'Shared Tasks',
-    "misc": 'Talks and Presentations'
-}
+    # convert to .bib
+    writer = BibTexWriter()
+    db_ordered = order_db(db)
+    with open(path_bib, 'wt') as bibfile:
+        for key in sorted(db_ordered.keys()):
+            bibfile.write("%" * 60 + "\n% " + key + "\n" + "%" * 60 + "\n")
+            db_ordered_dates = order_db(db_ordered[key], 'date')
+            for key2 in sorted(db_ordered_dates.keys(), reverse=True):
+                bibfile.write(writer.write(db_ordered_dates[key2]))
 
-if len(set(db_ordered.keys()).union(set(types.keys()))) != len(types.keys()):
-    raise ValueError
+    # convert to .html
+    types = {
+        "article": 'Journal Articles',
+        "book": 'Edited Volumes',
+        "proceedings": 'Edited Conference Proceedings',
+        "inproceedings": 'Articles in Conference Proceedings',
+        "incollection": 'Articles in Collections',
+        "sharedtask": 'Shared Tasks',
+        "misc": 'Talks and Presentations'
+    }
 
-with open('publications-pheinrich.html', 'wt') as htmlfile:
-    htmlfile.write("<html>\n")
-    for key in types.keys():
-        htmlfile.write("<h3>" + types[key] + "</h3>\n")
-        db_ordered_dates = order_db(db_ordered[key], 'date')
-        htmlfile.write("<ul>\n")
-        for key2 in sorted(db_ordered_dates.keys(), reverse=True):
-            for bib in db_ordered_dates[key2].entries:
-                htmlfile.write("<li> " + bibtex2html(bib))
-        htmlfile.write("</ul>\n")
-    htmlfile.write("<footer>\n")
-    htmlfile.write("last update: " + date.today().strftime("%B %d, %Y"))
-    htmlfile.write("</footer>\n")
-    htmlfile.write("</html>")
+    # check if all keys are taken care of
+    if len(set(db_ordered.keys()).union(set(types.keys()))) != len(types.keys()):
+        raise ValueError
+
+    with open(path_html, 'wt') as htmlfile:
+        htmlfile.write("<html>\n")
+        for key in types.keys():
+            htmlfile.write("<h3>" + types[key] + "</h3>\n")
+            db_ordered_dates = order_db(db_ordered[key], 'date')
+            htmlfile.write("<ul>\n")
+            for key2 in sorted(db_ordered_dates.keys(), reverse=True):
+                for bib in db_ordered_dates[key2].entries:
+                    htmlfile.write("<li> " + bibtex2html(bib))
+            htmlfile.write("</ul>\n")
+        htmlfile.write("<footer>\n")
+        htmlfile.write("last update: " + date.today().strftime("%B %d, %Y"))
+        htmlfile.write("</footer>\n")
+        htmlfile.write("</html>")
+
 
 # TODO: consistencize @misc (howpublished, address, type of presentation)
 # TODO: consistencize @inproceedings (location / address)
 # TODO: export
 # TODO: identify peer-reviewed abstracts
+
+
+if __name__ == '__main__':
+
+    argparser = ArgumentParser()
+    argparser.add_argument("glob_in")
+    args = argparser.parse_args()
+
+    # paths_in = glob("bib/*.bib")
+    paths_in = glob(args.glob_in)
+
+    # paths out
+    path_tsv = "publications-pheinrich.tsv"
+    path_bib = "publications-pheinrich.bib"
+    path_html = "publications-pheinrich.html"
+
+    main(paths_in, path_tsv, path_bib, path_html)
