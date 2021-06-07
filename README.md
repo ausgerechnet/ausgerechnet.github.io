@@ -1,1 +1,1 @@
-# ausgerechnet.github.io
+[personal website](https://philipp-heinrich.eu)

@@ -1,3 +1,6 @@
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import re
 import os
 from glob import glob
@@ -16,6 +19,12 @@ from bibtexparser.bwriter import BibTexWriter
 parser = BibTexParser(common_strings=True)
 parser.ignore_nonstandard_types = False
 parser.homogenise_fields = True
+
+
+# TODO: consistencize @misc (howpublished, address, type of presentation)
+# TODO: consistencize @inproceedings (location / address)
+# TODO: export / include in publications.html
+# TODO: identify peer-reviewed abstracts
 
 
 def formatter(entry):
@@ -49,11 +58,12 @@ def formatter(entry):
     return entry
 
 
-def author2html(author, special="Heinrich, Philipp"):
+def author2html(author, special=["Heinrich, Philipp", "Heinrich, P."]):
     """ format authors HTML-style """
+
     author = author.replace(" and ", "; ")
-    if special is not None:
-        author = author.replace(special, "<u>" + special + "</u>")
+    for s in special:
+        author = author.replace(s, "<u>" + s + "</u>")
     return author
 
 
@@ -115,6 +125,7 @@ def inproceedings2html(entry):
 
     style: author (year). <b>title</b>. 'In' <i>booktitle</i>, 'pages' pages, address.
     """
+
     return " ".join([
         author2html(entry['author']),
         "(" + entry['year'] + ").",
@@ -134,6 +145,7 @@ def incollection2html(entry):
     style: author (year). <b>title</b>. 'In' <i>booktitle</i>,
            'edited by' editor, 'pages' pages, address: publisher.
     """
+
     return " ".join([
         author2html(entry['author']),
         "(" + entry['year'] + ").",
@@ -153,6 +165,7 @@ def misc2html(entry):
 
     style: author (month, year). <b>title</b>. <i>howpublished</i>.
     """
+
     return " ".join([
         author2html(entry['author']),
         "(" + entry['year'] + ").",
@@ -161,40 +174,45 @@ def misc2html(entry):
     ])
 
 
-def bibtex2html(entry):
+def bibtex2html(entry, pdf_dir):
     """ converts an entry to HTML """
 
     out = None
 
-    # Journal Articles (@article)
-    if entry['ENTRYTYPE'] == 'article':
-        out = article2html(entry)
+    try:
+        # Journal Articles (@article)
+        if entry['ENTRYTYPE'] == 'article':
+            out = article2html(entry)
 
-    # Edited Volumes (@book or @proceedings)
-    elif entry['ENTRYTYPE'] == 'book' or entry['ENTRYTYPE'] == 'proceedings':
-        out = book2html(entry)
+        # Edited Volumes (@book or @proceedings)
+        elif entry['ENTRYTYPE'] == 'book' or entry['ENTRYTYPE'] == 'proceedings':
+            out = book2html(entry)
 
-    # Articles in Conference Proceedings / SharedTasks (@inproceedings)
-    elif entry['ENTRYTYPE'] == 'inproceedings':
-        out = inproceedings2html(entry)
+        # Articles in Conference Proceedings / SharedTasks (@inproceedings)
+        elif entry['ENTRYTYPE'] == 'inproceedings':
+            out = inproceedings2html(entry)
 
-    # Articles in Collections (@incollection)
-    elif entry['ENTRYTYPE'] == 'incollection':
-        out = incollection2html(entry)
+        # Articles in Collections (@incollection)
+        elif entry['ENTRYTYPE'] == 'incollection':
+            out = incollection2html(entry)
 
-    # Talks and Presentations (@misc)
-    elif entry['ENTRYTYPE'] == 'misc':
-        out = misc2html(entry)
+        # Talks and Presentations (@misc)
+        elif entry['ENTRYTYPE'] == 'misc':
+            out = misc2html(entry)
 
-    else:
-        raise NotImplementedError(
-            "ENTRYTYPE %s not supported" % entry['ENTRYTYPE']
-        )
+        else:
+            raise NotImplementedError(
+                "ENTRYTYPE %s not supported" % entry['ENTRYTYPE']
+            )
+
+    except KeyError:
+        print(entry)
+        raise NotImplementedError("can't deal with this")
 
     # remove capitalizers
     out = re.sub("{|}", "", out)
 
-    # links
+    # links ############################
     out += " ["
 
     # bib
@@ -206,10 +224,10 @@ def bibtex2html(entry):
 
     # PDFs
     res = {
-        'abstract': "pdf/" + entry['ID'] + "_abstract.pdf",
-        'pdf': "pdf/" + entry['ID'] + ".pdf",
-        'slides': "pdf/" + entry['ID'] + "_slides.pdf",
-        'poster': "pdf/" + entry['ID'] + "_poster.pdf"
+        'abstract': pdf_dir + entry['ID'] + "_abstract.pdf",
+        'pdf': pdf_dir + entry['ID'] + ".pdf",
+        'slides': pdf_dir + entry['ID'] + "_slides.pdf",
+        'poster': pdf_dir + entry['ID'] + "_poster.pdf"
     }
 
     for key in ['abstract', 'pdf', 'slides', 'poster']:
@@ -218,7 +236,7 @@ def bibtex2html(entry):
 
     out += "]\n"
 
-    # unescape stuff
+    # unescape stuff ###################
     out = out.replace("``", "&ldquo;")
     out = out.replace("''", "&rdquo;")
     out = out.replace(r"\_", "_")
@@ -285,7 +303,7 @@ def order_db(db, order="ENTRYTYPE"):
 
 # WRITE ########################################################################
 
-def main(paths_in, path_tsv, path_bib, path_html):
+def main(paths_in, pdf_dir, path_tsv, path_bib, path_html):
 
     db = read_many_bibs(paths_in)
 
@@ -313,11 +331,10 @@ def main(paths_in, path_tsv, path_bib, path_html):
         "sharedtask": 'Shared Tasks',
         "misc": 'Talks and Presentations'
     }
-
     # check if all keys are taken care of
     if len(set(db_ordered.keys()).union(set(types.keys()))) != len(types.keys()):
         raise ValueError
-
+    # write
     with open(path_html, 'wt') as htmlfile:
         htmlfile.write("<html>\n")
         for key in types.keys():
@@ -326,32 +343,34 @@ def main(paths_in, path_tsv, path_bib, path_html):
             htmlfile.write("<ul>\n")
             for key2 in sorted(db_ordered_dates.keys(), reverse=True):
                 for bib in db_ordered_dates[key2].entries:
-                    htmlfile.write("<li> " + bibtex2html(bib))
+                    htmlfile.write("<li> " + bibtex2html(bib, pdf_dir))
             htmlfile.write("</ul>\n")
         htmlfile.write("<footer>\n")
-        htmlfile.write("last update: " + date.today().strftime("%B %d, %Y"))
+        htmlfile.write("last update: " + date.today().strftime("%B %d, %Y") + "\n")
         htmlfile.write("</footer>\n")
         htmlfile.write("</html>")
-
-
-# TODO: consistencize @misc (howpublished, address, type of presentation)
-# TODO: consistencize @inproceedings (location / address)
-# TODO: export
-# TODO: identify peer-reviewed abstracts
 
 
 if __name__ == '__main__':
 
     argparser = ArgumentParser()
-    argparser.add_argument("glob_in")
+    argparser.add_argument("--glob_bib",
+                           default="bib/*.bib",
+                           help="path to *.bib")
+    argparser.add_argument("--pdf_dir",
+                           default="pdf/",
+                           help="directory of PDFs (must end on '/')")
     args = argparser.parse_args()
-
-    # paths_in = glob("bib/*.bib")
-    paths_in = glob(args.glob_in)
 
     # paths out
     path_tsv = "publications-pheinrich.tsv"
     path_bib = "publications-pheinrich.bib"
     path_html = "publications-pheinrich.html"
 
-    main(paths_in, path_tsv, path_bib, path_html)
+    main(
+        glob(args.glob_bib),
+        args.pdf_dir,
+        path_tsv,
+        path_bib,
+        path_html
+    )
