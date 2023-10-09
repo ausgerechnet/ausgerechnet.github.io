@@ -259,6 +259,8 @@ def read_many_bibs(paths_in, consistencize=True):
 
     # read all bib strings
     db = bibtexparser.loads(txt_list, parser)
+    # for left, right in zip(paths_in, db.entries):
+    #     print(left, right['ID'])
     assert len(db.entries) == len(paths_in)
 
     # TRANSFORM
