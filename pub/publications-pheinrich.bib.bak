@@ -97,21 +97,20 @@
  year = {2022}
 }
 
-@InCollection{DykesETC2022,
-  author    = {Dykes, Nathan and Heinrich, Philipp and Evert, Stephanie},
-  title     = {{Retrieving} {Twitter} argumentation with corpus queries and discourse analysis},
-  booktitle = {{Broadening} the {Spectrum} of {Corpus} {Linguistics:} {New} approaches to variability and change},
-  publisher = {John Benjamins Publishing Company},
-  year      = {2022},
-  editor    = {Flach, Susanne and Hilpert, Martin},
-  volume    = {105},
-  series    = {Studies in Corpus Linguistics},
-  pages     = {229–256},
-  address   = {Amsterdam},
-  isbn      = {9789027212665},
-  abstract  = {We propose a corpus linguistic approach for retrieving argumentation from tweets about Brexit. We analyse two corpora, one from before the referendum in 2016 and one from early 2019. Our approach is based on the manual development of morphosyntactic corpus queries (in CQP syntax) that target specific argumentation patterns. For the present corpora we have developed 130 queries targeting 34 logical formulae. The paper showcases the query development and presents quantitative and qualitative results on how Brexit-related arguments have changed on Twitter from 2016 to 2019.},
-  doi       = {10.1075/scl.105.08dyk},
-  file      = {DykesETC2022_CADS_slides.pdf:DykesETC2022_CADS_slides.pdf:PDF;DykesETC2022_CADS_abstract.pdf:DykesETC2022_CADS_abstract.pdf:PDF;DykesETC2022.pdf:pdf/sort/DykesETC2022.pdf:PDF;DykesETC2022_CADS_slides.pdf:pdf/DykesETC2022_CADS_slides.pdf:PDF;DykesETC2022_CADS_abstract.pdf:pdf/DykesETC2022_CADS_abstract.pdf:PDF},
+@incollection{DykesETC2022,
+ abstract = {We propose a corpus linguistic approach for retrieving argumentation from tweets about Brexit. We analyse two corpora, one from before the referendum in 2016 and one from early 2019. Our approach is based on the manual development of morphosyntactic corpus queries (in CQP syntax) that target specific argumentation patterns. For the present corpora we have developed 130 queries targeting 34 logical formulae. The paper showcases the query development and presents quantitative and qualitative results on how Brexit-related arguments have changed on Twitter from 2016 to 2019.},
+ address = {Amsterdam},
+ author = {Dykes, Nathan and Heinrich, Philipp and Evert, Stephanie},
+ booktitle = {{Broadening} the {Spectrum} of {Corpus} {Linguistics:} {New} approaches to variability and change},
+ doi = {10.1075/scl.105.08dyk},
+ editor = {Flach, Susanne and Hilpert, Martin},
+ isbn = {9789027212665},
+ pages = {229–256},
+ publisher = {John Benjamins Publishing Company},
+ series = {Studies in Corpus Linguistics},
+ title = {{Retrieving} {Twitter} argumentation with corpus queries and discourse analysis},
+ volume = {105},
+ year = {2022}
 }
 @incollection{AdrianETC2020,
  abstract = {Der Weg zur{\"u}ck zur Kontrolle {\"u}ber die eigene Souver{\"a}nit{\"a}t und Freiheit begann f{\"u}r Gro{\ss}britannien mit einem Referendum gegen den Verbleib in der Europ{\"a}ischen Union im Juni 2016 sowie dem offiziellen Austrittsantrag im Juni 2017. Als Direktverbindung in die Unabh{\"a}ngigkeit propagiert, entpuppte sich der Weg schnell als m{\"a}andernder Pfad gespickt mit innerparteilichen, innenpolitischen und bilateralen Machtk{\"a}mpfen. Die Europawahl 2019 mag aus der Perspektive Gro{\ss}britanniens nur ein zus{\"a}tzliches Hindernis darstellen, doch europaskeptischen Stimmen anderer L{\"a}nder k{\"o}nnten den Brexit im Kontext der Wahlen f{\"u}r ihre eigenen Exit-Strategien instrumentalisieren. Daher identifiziert und analysiert dieser Beitrag populistische Elemente des Brexit-Diskurs auf Twitter im Kontext der Europawahl in Deutschland, Frankreich und Gro{\ss}britannien mithilfe eines interdisziplin{\"a}ren Ansatzes basierend auf einer Kombination verschiedener textanalytischer Verfahren. Die Ergebnisse zeigen populistische argumentative Muster in den nationalen Diskursen. Statt einer Europ{\"a}isierung des Brexit-Diskurses l{\"a}sst sich aber eher deren Konformit{\"a}t mit dem {\"u}bergreifenden europapolitischen Kontext des Landes beobachten.},
@@ -245,29 +244,28 @@
  year = {2021}
 }
 
-@InProceedings{ArastehETC2021,
-  author    = {Arasteh, Soroosh Tayebi and Monajem, Mehrpad and Christlein, Vincent and Heinrich, Philipp and Nicolaou, Anguelos and Boldaji, Hamidreza Nader and Lotfinia, Mahshad and Evert, Stefan},
-  title     = {{How} {Will} {Your} {Tweet} {Be} {Received?} {Predicting} the {Sentiment} {Polarity} of {Tweet} {Replies}},
-  booktitle = {2021 {IEEE} 15th {International} {Conference} on {Semantic} {Computing} {(ICSC)}},
-  year      = {2021},
-  pages     = {370–373},
-  address   = {Laguna Hills, CA, USA},
-  doi       = {10.1109/ICSC50631.2021.00068},
-  file      = {ArastehETC2021.pdf:ArastehETC2021.pdf:PDF;ArastehETC2021.pdf:pdf/ArastehETC2021.pdf:PDF},
+@inproceedings{ArastehETC2021,
+ address = {Laguna Hills, CA, USA},
+ author = {Arasteh, Soroosh Tayebi and Monajem, Mehrpad and Christlein, Vincent and Heinrich, Philipp and Nicolaou, Anguelos and Boldaji, Hamidreza Nader and Lotfinia, Mahshad and Evert, Stefan},
+ booktitle = {2021 {IEEE} 15th {International} {Conference} on {Semantic} {Computing} {(ICSC)}},
+ doi = {10.1109/ICSC50631.2021.00068},
+ number = {},
+ pages = {370–373},
+ title = {{How} {Will} {Your} {Tweet} {Be} {Received?} {Predicting} the {Sentiment} {Polarity} of {Tweet} {Replies}},
+ volume = {},
+ year = {2021}
 }
-
-@InProceedings{BlombachETC2020,
-  author    = {Blombach, Andreas and Dykes, Natalie and Heinrich, Philipp and Kabashi, Besim and Proisl, Thomas},
-  title     = {{A} {Corpus} of {German} {Reddit} {Exchanges} {(GeRedE)}},
-  booktitle = {{Proceedings} of the 12th {Language} {Resources} and {Evaluation} {Conference}},
-  year      = {2020},
-  pages     = {6310–6316},
-  address   = {Marseille, France},
-  month     = {May},
-  publisher = {European Language Resources Association},
-  abstract  = {GeRedE is a 270 million token German CMC corpus containing approximately 380,000 submissions and 6,800,000 comments posted on Reddit between 2010 and 2018. Reddit is a popular online platform combining social news aggregation, discussion and micro-blogging. Starting from a large, freely available data set, the paper describes our approach to filter out German data and further pre-processing steps, as well as which metadata and annotation layers have been included so far. We explore the Reddit sphere, what makes the German data linguistically peculiar, and how some of the communities within Reddit differ from one another. The CWB-indexed version of our final corpus is available via CQPweb, and all our processing scripts as well as all manual annotation and automatic language classification can be downloaded from GitHub.},
-  file      = {BlombachETC2020.pdf:BlombachETC2020.pdf:PDF;BlombachETC2020.pdf:pdf/BlombachETC2020.pdf:PDF},
-  url       = {https://www.aclweb.org/anthology/2020.lrec-1.774},
+@inproceedings{BlombachETC2020,
+ abstract = {GeRedE is a 270 million token German CMC corpus containing approximately 380,000 submissions and 6,800,000 comments posted on Reddit between 2010 and 2018. Reddit is a popular online platform combining social news aggregation, discussion and micro-blogging. Starting from a large, freely available data set, the paper describes our approach to filter out German data and further pre-processing steps, as well as which metadata and annotation layers have been included so far. We explore the Reddit sphere, what makes the German data linguistically peculiar, and how some of the communities within Reddit differ from one another. The CWB-indexed version of our final corpus is available via CQPweb, and all our processing scripts as well as all manual annotation and automatic language classification can be downloaded from GitHub.},
+ address = {Marseille, France},
+ author = {Blombach, Andreas and Dykes, Natalie and Heinrich, Philipp and Kabashi, Besim and Proisl, Thomas},
+ booktitle = {{Proceedings} of the 12th {Language} {Resources} and {Evaluation} {Conference}},
+ month = {May},
+ pages = {6310–6316},
+ publisher = {European Language Resources Association},
+ title = {{A} {Corpus} of {German} {Reddit} {Exchanges} {(GeRedE)}},
+ url = {https://www.aclweb.org/anthology/2020.lrec-1.774},
+ year = {2020}
 }
 
 @inproceedings{DykesETC2020b,
@@ -453,50 +451,40 @@
  title = {{NLP} for {German} {CMC} {Texts:} {Tokenization,} {POS} {Tagging,} and a {New} {Gold} {Standard} for {Lemmatization}},
  year = {2019}
 }
-
-@Misc{DykesETC2019_CL,
-  author       = {Dykes, Natalie and Evert, Stefan and Peters, Joachim and Heinrich, Philipp},
-  title        = {{Argumentation} is key: {A} keyword-based study of arguments in online discourse},
-  howpublished = {Presentation at Corpus Linguistics 2019. Cardiff, UK},
-  year         = {2019},
-  date         = {2019-07-22},
-  file         = {DykesETC2019_CL_abstract.pdf:DykesETC2019_CL_abstract.pdf:PDF;DykesETC2019_CL_slides.pdf:DykesETC2019_CL_slides.pdf:PDF;DykesETC2019_CL_abstract.pdf:pdf/DykesETC2019_CL_abstract.pdf:PDF;DykesETC2019_CL_slides.pdf:pdf/DykesETC2019_CL_slides.pdf:PDF},
+@misc{DykesETC2019_CL,
+ author = {Dykes, Natalie and Evert, Stefan and Peters, Joachim and Heinrich, Philipp},
+ date = {2019-07-22},
+ howpublished = {Presentation at Corpus Linguistics 2019. Cardiff, UK},
+ title = {{Argumentation} is key: {A} keyword-based study of arguments in online discourse},
+ year = {2019}
 }
-
-@Misc{DykesETC2019_ECA,
-  author       = {Dykes, Natalie and Heinrich, Philipp and Evert, Stefan},
-  title        = {{Arguing} {Brexit} on {Twitter.} {A} corpus linguistic study},
-  howpublished = {Presentation at European Conference on Argumentation 2019. Groningen, Netherlands},
-  year         = {2019},
-  date         = {2019-06-27},
-  file         = {DykesETC2019_ECA_slides.pdf:DykesETC2019_ECA_slides.pdf:PDF;DykesETC2019_ECA_slides.pdf:pdf/DykesETC2019_ECA_slides.pdf:PDF},
+@misc{DykesETC2019_ECA,
+ author = {Dykes, Natalie and Heinrich, Philipp and Evert, Stefan},
+ date = {2019-06-27},
+ howpublished = {Presentation at European Conference on Argumentation 2019. Groningen, Netherlands},
+ title = {{Arguing} {Brexit} on {Twitter.} {A} corpus linguistic study},
+ year = {2019}
 }
-
-@Misc{DykesETC2019_ICAME,
-  author       = {Dykes, Natalie and Heinrich, Philipp and Evert, Stefan},
-  title        = {{Reconstructing} {Twitter} arguments with corpus linguistics},
-  howpublished = {Presentation at ICAME40: Language in Time, Time in Language. Neuchâtel, Switzerland},
-  year         = {2019},
-  date         = {2019-06-03},
-  file         = {DykesETC2019_ICAME_slides.pdf:DykesETC2019_ICAME_slides.pdf:PDF;DykesETC2019_ICAME_slides.pdf:pdf/DykesETC2019_ICAME_slides.pdf:PDF},
+@misc{DykesETC2019_ICAME,
+ author = {Dykes, Natalie and Heinrich, Philipp and Evert, Stefan},
+ date = {2019-06-03},
+ howpublished = {Presentation at ICAME40: Language in Time, Time in Language. Neuchâtel, Switzerland},
+ title = {{Reconstructing} {Twitter} arguments with corpus linguistics},
+ year = {2019}
 }
-
-@Misc{GoettlingerETC2019_RATIO,
-  author       = {Göttlinger, Merlin and Schröder, Lutz and Heinrich, Philipp and Dykes, Natalie and Evert, Stefan},
-  title        = {{Corpus} {Queries} for {Argumentation} {Mining}},
-  howpublished = {Presentation at the RATIO Symposium 2019. Bielefeld, Germany},
-  year         = {2019},
-  date         = {2019-05-28},
-  file         = {GoettlingerETC2019_RATIO_poster.pdf:GoettlingerETC2019_RATIO_poster.pdf:PDF;GoettlingerETC2019_RATIO_poster.pdf:pdf/GoettlingerETC2019_RATIO_poster.pdf:PDF},
+@misc{GoettlingerETC2019_RATIO,
+ author = {Göttlinger, Merlin and Schröder, Lutz and Heinrich, Philipp and Dykes, Natalie and Evert, Stefan},
+ date = {2019-05-28},
+ howpublished = {Presentation at the RATIO Symposium 2019. Bielefeld, Germany},
+ title = {{Corpus} {Queries} for {Argumentation} {Mining}},
+ year = {2019}
 }
-
-@Misc{EvertHeinrich2019_GHWCLDH,
-  author       = {Evert, Stefan and Heinrich, Philipp},
-  title        = {{Introducing} {MMDA:} {An} interactive toolkit for {CDA}},
-  howpublished = {Presentation at the 7th Göttingen-Hildesheim-Workshop on Computational Linguistics and Digital Humanities: Digital Methods in Political Science. Göttingen, Germany},
-  year         = {2019},
-  date         = {2019-02-28},
-  file         = {EvertHeinrich2019_GHWCLDH_slides.pdf:EvertHeinrich2019_GHWCLDH_slides.pdf:PDF;EvertHeinrich2019_GHWCLDH_abstract.pdf:EvertHeinrich2019_GHWCLDH_abstract.pdf:PDF;EvertHeinrich2019_GHWCLDH_slides.pdf:pdf/EvertHeinrich2019_GHWCLDH_slides.pdf:PDF;EvertHeinrich2019_GHWCLDH_abstract.pdf:pdf/EvertHeinrich2019_GHWCLDH_abstract.pdf:PDF},
+@misc{EvertHeinrich2019_GHWCLDH,
+ author = {Evert, Stefan and Heinrich, Philipp},
+ date = {2019-02-28},
+ howpublished = {Presentation at the 7th Göttingen-Hildesheim-Workshop on Computational Linguistics and Digital Humanities: Digital Methods in Political Science. Göttingen, Germany},
+ title = {{Introducing} {MMDA:} {An} interactive toolkit for {CDA}},
+ year = {2019}
 }
 @misc{DiwersyETC2019_EUROPHRAS,
  author = {Diwersy, Sascha and Evert, Stefan and Heinrich, Philipp and Proisl, Thomas},
@@ -505,45 +493,37 @@
  title = {{Means} of {Productivity} – {On} the statistical modelling of the restrictedness of lexico-grammatical patterns},
  year = {2019}
 }
-
-@Misc{Heinrich2018_KAIST,
-  author       = {Heinrich, Philipp},
-  title        = {{Corpus-Based} {Discourse} {Analysis:} {Recent} {Developments} and {Future} {Directions}},
-  howpublished = {Presentation at KAIST. Seoul, Republic of Korea},
-  year         = {2018},
-  date         = {2018-10-01},
-  file         = {Heinrich2018_KAIST.pdf:Heinrich2018_KAIST.pdf:PDF;Heinrich2018_KAIST.pdf:pdf/Heinrich2018_KAIST.pdf:PDF},
+@misc{Heinrich2018_KAIST,
+ author = {Heinrich, Philipp},
+ date = {2018-10-01},
+ howpublished = {Presentation at KAIST. Seoul, Republic of Korea},
+ title = {{Corpus-Based} {Discourse} {Analysis:} {Recent} {Developments} and {Future} {Directions}},
+ year = {2018}
 }
-
-@Misc{GriebelHeinrich2017_IPSA,
-  author       = {Griebel, Tim and Heinrich, Philipp},
-  title        = {{The} {Cultural} {Political} {Economy} of {Brexit} in the {Age} of {Austerity} – a {Corpus-Assisted} {Critical} {Realist} {Multimedia} {Discourse} {Analysis}},
-  howpublished = {Presentation at IPSA International Conference ``Political Science in the Digital Age: Mapping Opportunities, Perils and Uncertainties''. Hannover, Germany},
-  year         = {2017},
-  date         = {2017-12-05},
-  file         = {GriebelHeinrich2017_IPSA.pdf:GriebelHeinrich2017_IPSA.pdf:PDF;GriebelHeinrich2017_IPSA.pdf:pdf/GriebelHeinrich2017_IPSA.pdf:PDF},
+@misc{GriebelHeinrich2017_IPSA,
+ author = {Griebel, Tim and Heinrich, Philipp},
+ date = {2017-12-05},
+ howpublished = {Presentation at IPSA International Conference ``Political Science in the Digital Age: Mapping Opportunities, Perils and Uncertainties''. Hannover, Germany},
+ title = {{The} {Cultural} {Political} {Economy} of {Brexit} in the {Age} of {Austerity} – a {Corpus-Assisted} {Critical} {Realist} {Multimedia} {Discourse} {Analysis}},
+ year = {2017}
 }
-
-@Misc{EvertETC2017_IC2S2,
-  author       = {Evert, Stefan and Heinrich, Philipp and Schäfer, Fabian},
-  title        = {{Social} {Bots} in {Japan's} 2014 {General} {Election:} {Preliminary} {Results} from a {Corpus-Linguistic} and {Qualitative} {Study} of {Computational} {Propaganda} on {Twitter}},
-  howpublished = {Presentation at the 3rd Annual International Conference on Computational Social Science, Cologne},
-  year         = {2017},
-  date         = {2017-07-13},
-  file         = {EvertETC2017_IC2S2_slides.pdf:EvertETC2017_IC2S2_slides.pdf:PDF;EvertETC2017_IC2S2_slides.pdf:pdf/EvertETC2017_IC2S2_slides.pdf:PDF},
+@misc{EvertETC2017_IC2S2,
+ author = {Evert, Stefan and Heinrich, Philipp and Schäfer, Fabian},
+ date = {2017-07-13},
+ howpublished = {Presentation at the 3rd Annual International Conference on Computational Social Science, Cologne},
+ title = {{Social} {Bots} in {Japan's} 2014 {General} {Election:} {Preliminary} {Results} from a {Corpus-Linguistic} and {Qualitative} {Study} of {Computational} {Propaganda} on {Twitter}},
+ year = {2017}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % proceedings
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-@Proceedings{CCL2019,
-  title     = {{Proceedings} of the 15th {Conference} on {Natural} {Language} {Processing} {(KONVENS} 2019)},
-  year      = {2019},
-  editor    = {Chair of Computational Corpus Linguistics, FAU Erlangen-Nürnberg},
-  address   = {Erlangen, Germany},
-  publisher = {German Society for Computational Linguistics \& Language Technology},
-  file      = {CCL2019.pdf:CCL2019.pdf:PDF;CCL2019.pdf:pdf/CCL2019.pdf:PDF},
-  url       = {https://corpora.linguistik.uni-erlangen.de/data/konvens/proceedings/},
+@proceedings{CCL2019,
+ address = {Erlangen, Germany},
+ editor = {Chair of Computational Corpus Linguistics, FAU Erlangen-Nürnberg},
+ publisher = {German Society for Computational Linguistics \& Language Technology},
+ title = {{Proceedings} of the 15th {Conference} on {Natural} {Language} {Processing} {(KONVENS} 2019)},
+ url = {https://corpora.linguistik.uni-erlangen.de/data/konvens/proceedings/},
+ year = {2019}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % sharedtask
@@ -588,5 +568,3 @@
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
-
-@Comment{jabref-meta: fileDirectory:/home/ausgerechnet/repositories/ausgerechnet.github.io/pub/pdf;}
