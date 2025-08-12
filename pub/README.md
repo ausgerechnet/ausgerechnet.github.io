@@ -8,5 +8,8 @@
 
 1. include bibtex in database (make sure KEY is consistent)
 2. optional: include PDF at pdf/KEY.pdf
+
+
+## TODO
 3. run publications-update.py
 4. update [publications.html](publications.html) and [talks.html](talks.html) manually
