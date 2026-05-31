@@ -1,18 +1,34 @@
 % Encoding: UTF-8
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% article
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-@article{MalapallyETC2023,
- abstract = {Disadvantage and privilege work together to uphold systems of inequality. Nevertheless, racial inequality is often described as Black disadvantage, while White privilege remains less visible. This one-sided framing in public discourse may result in equally one-sided understandings of and policies aimed at reducing inequality. In the present research, we examined the use of and the reactions to Black disadvantage and White privilege frames in tweets. Twitter stands out as a public sphere inspiring both online and offline political discussions and protests around racial inequality (e.g. #BlackLivesMatter). We analyzed the framing of tweets using a combination of a rule-based and a machine-learning approach, resulting in two corpora of 11,292 (Study 1) and 31,984 tweets (Study 2, a direct replication of Study 1) using comparative frames of racial inequality. Users overall more often framed inequality as Black disadvantage than as White privilege. Moreover, tweets with a disadvantage frame were more often retweeted, but less often quoted and replied to than tweets with a privilege frame. These results show that racial inequality is often one-sidedly framed in real online conversations and that this pattern may be reinforced by other users because they preferably pass on disadvantage frames. However, focusing on White privilege may provoke more discussion about racial inequality. Although effect sizes were small, these effects can impact content and perspectives in mainstream media, public opinion, and political agendas by guiding attention to certain aspects of racial inequality, but not others.},
- author = {Malapally, Annette and Blombach, Andreas and Heinrich, Philipp and Schnepf, Julia and Bruckmüller, Susanne},
- doi = {10.1080/10584609.2023.2257624},
- journal = {Political Communication},
- keywords = {Black disadvantage; machine learning; social media; syntax analysis; White privilege},
- pages = {107–128},
- title = {{Unequal} {Tweets:} {Black} {Disadvantage} is {(Re)tweeted} {More} but {Discussed} {Less} {Than} {White} {Privilege}},
- url = {https://www.tandfonline.com/doi/full/10.1080/10584609.2023.2257624},
- volume = {41},
- year = {2023}
+@Article{HeinrichETC2024b,
+  author  = {Heinrich, Philipp and Blombach, Andreas and Dykes, Nathan and Evert, Stephanie and Fuchs, Tamara and Havenstein, Linda and Schäfer, Fabian},
+  title   = {From Linguistic to Discursive Patterns: Introducing Discoursemes as a Basic Unit of Discourse Analysis},
+  journal = {CADAAD Journal},
+  year    = {2024},
+  volume  = {16},
+  number  = {2},
+  pages   = {87–111},
+  month   = {Dec.},
+  doi     = {10.21827/cadaad.16.2.42457},
+  file    = {HeinrichETC2024b.pdf:pdf/HeinrichETC2024b.pdf:PDF},
+  url     = {https://ugp.rug.nl/cadaad/article/view/42457},
 }
 
+@Article{MalapallyETC2023,
+  author   = {Malapally, Annette and Blombach, Andreas and Heinrich, Philipp and Schnepf, Julia and Bruckmüller, Susanne},
+  title    = {Unequal {Tweets:} {Black} Disadvantage is (Re)tweeted More but Discussed Less Than White Privilege},
+  journal  = {Political Communication},
+  year     = {2023},
+  volume   = {41},
+  pages    = {107–128},
+  abstract = {Disadvantage and privilege work together to uphold systems of inequality. Nevertheless, racial inequality is often described as Black disadvantage, while White privilege remains less visible. This one-sided framing in public discourse may result in equally one-sided understandings of and policies aimed at reducing inequality. In the present research, we examined the use of and the reactions to Black disadvantage and White privilege frames in tweets. Twitter stands out as a public sphere inspiring both online and offline political discussions and protests around racial inequality (e.g. #BlackLivesMatter). We analyzed the framing of tweets using a combination of a rule-based and a machine-learning approach, resulting in two corpora of 11,292 (Study 1) and 31,984 tweets (Study 2, a direct replication of Study 1) using comparative frames of racial inequality. Users overall more often framed inequality as Black disadvantage than as White privilege. Moreover, tweets with a disadvantage frame were more often retweeted, but less often quoted and replied to than tweets with a privilege frame. These results show that racial inequality is often one-sidedly framed in real online conversations and that this pattern may be reinforced by other users because they preferably pass on disadvantage frames. However, focusing on White privilege may provoke more discussion about racial inequality. Although effect sizes were small, these effects can impact content and perspectives in mainstream media, public opinion, and political agendas by guiding attention to certain aspects of racial inequality, but not others.},
+  doi      = {10.1080/10584609.2023.2257624},
+  keywords = {Black disadvantage; machine learning; social media; syntax analysis; White privilege},
+  url      = {https://www.tandfonline.com/doi/full/10.1080/10584609.2023.2257624},
+}
 @article{AdrianETC2022b,
  author = {Adrian, Axel and Dykes, Nathan and Evert, Stephanie and Heinrich, Philipp and Keuchen, Michael},
  journal = {LegalTech},
@@ -23,22 +39,21 @@
  volume = {4},
  year = {2022}
 }
-
-@Article{DykesETC2021,
-  author  = {Dykes, Natalie and Evert, Stefan and Göttlinger, Merlin and Heinrich, Philipp and Schröder, Lutz},
-  title   = {{Argument} parsing via corpus queries},
-  journal = {it -- Information Technology},
-  year    = {2021},
-  volume  = {63},
-  number  = {1},
-  pages   = {31–44},
-  doi     = {doi:10.1515/itit-2020-0051},
-  url     = {https://doi.org/10.1515/itit-2020-0051},
+@article{DykesETC2021,
+ author = {Dykes, Natalie and Evert, Stefan and Göttlinger, Merlin and Heinrich, Philipp and Schröder, Lutz},
+ doi = {doi:10.1515/itit-2020-0051},
+ journal = {it -- Information Technology},
+ number = {1},
+ pages = {31–44},
+ title = {{Argument} parsing via corpus queries},
+ url = {https://doi.org/10.1515/itit-2020-0051},
+ volume = {63},
+ year = {2021}
 }
 
 @Article{DykesETC2020,
   author  = {Dykes, Natalie and Evert, Stefan and Göttlinger, Merlin and Heinrich, Philipp and Schröder, Lutz},
-  title   = {{Reconstructing} {Arguments} from {Noisy} {Text:} {Introduction} to the {RANT} project},
+  title   = {Reconstructing Arguments from Noisy Text: Introduction to the {RANT} project},
   journal = {Datenbank-Spektrum},
   year    = {2020},
   volume  = {20},
@@ -48,7 +63,7 @@
 
 @Article{EvertETC2019,
   author  = {Evert, Stefan and Heinrich, Philipp and Henselmann, Klaus and Rabenstein, Ulrich and Scherr, Elisabeth and Schmitt, Martin and Schröder, Lutz},
-  title   = {{Combining} {Machine} {Learning} and {Semantic} {Features} in the {Classification} of {Corporate} {Disclosures}},
+  title   = {Combining Machine Learning and Semantic Features in the Classification of Corporate Disclosures},
   journal = {J. Logic, Language and Information (JoLLI)},
   year    = {2019},
   volume  = {28},
@@ -60,7 +75,7 @@
 
 @Article{SchaeferETC2017,
   author   = {Schäfer, Fabian and Evert, Stefan and Heinrich, Philipp},
-  title    = {{Japan’s} 2014 {General} {Election:} {Political} {Bots,} {Right-Wing} {Internet} {Activism} and {PM} {Abe} {Shinzō’s} {Hidden} {Nationalist} {Agenda}},
+  title    = {{Japan's} 2014 General Election: {Political} Bots, Right-Wing Internet Activism and {PM} {Abe} {Shinzō's} Hidden Nationalist Agenda},
   journal  = {Big Data},
   year     = {2017},
   volume   = {5},
@@ -71,17 +86,22 @@
   date     = {2017-11-28},
   url      = {https://www.liebertpub.com/doi/10.1089/big.2017.0049},
 }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% book
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-@book{GriebelETC2020,
- address = {London},
- date = {2020-09-15},
- editor = {Griebel, Tim and Evert, Stefan and Heinrich, Philipp},
- publisher = {Routledge},
- title = {{Multimodal} {Approaches} to {Media} {Discourses:} {Reconstructing} the {Age} of {Austerity} in the {United} {Kingdom}},
- url = {https://www.routledge.com/Multimodal-Approaches-to-Media-Discourses-Reconstructing-the-Age-of-Austerity/Griebel-Evert-Heinrich/p/book/9780367332891},
- year = {2020}
+@Book{GriebelETC2020,
+  title     = {Multimodal Approaches to Media Discourses: Reconstructing the Age of Austerity in the {United} {Kingdom}},
+  publisher = {Routledge},
+  year      = {2020},
+  editor    = {Griebel, Tim and Evert, Stefan and Heinrich, Philipp},
+  address   = {London},
+  date      = {2020-09-15},
+  url       = {https://www.routledge.com/Multimodal-Approaches-to-Media-Discourses-Reconstructing-the-Age-of-Austerity/Griebel-Evert-Heinrich/p/book/9780367332891},
 }
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% incollection
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 @incollection{AdrianETC2022a,
  address = {Berlin},
  author = {Adrian, Axel and Dykes, Nathan and Evert, Stephanie and Heinrich, Philipp and Keuchen, Michael and Proisl, Thomas},
@@ -96,23 +116,23 @@
  year = {2022}
 }
 
-@InCollection{DykesETC2022,
-  author    = {Dykes, Nathan and Heinrich, Philipp and Evert, Stephanie},
-  title     = {{Retrieving} {Twitter} argumentation with corpus queries and discourse analysis},
-  booktitle = {{Broadening} the {Spectrum} of {Corpus} {Linguistics:} {New} approaches to variability and change},
-  publisher = {John Benjamins Publishing Company},
-  year      = {2022},
-  editor    = {Flach, Susanne and Hilpert, Martin},
-  volume    = {105},
-  series    = {Studies in Corpus Linguistics},
-  pages     = {229–256},
-  address   = {Amsterdam},
-  isbn      = {9789027212665},
-  abstract  = {We propose a corpus linguistic approach for retrieving argumentation from tweets about Brexit. We analyse two corpora, one from before the referendum in 2016 and one from early 2019. Our approach is based on the manual development of morphosyntactic corpus queries (in CQP syntax) that target specific argumentation patterns. For the present corpora we have developed 130 queries targeting 34 logical formulae. The paper showcases the query development and presents quantitative and qualitative results on how Brexit-related arguments have changed on Twitter from 2016 to 2019.},
-  doi       = {10.1075/scl.105.08dyk},
+@incollection{DykesETC2022,
+ abstract = {We propose a corpus linguistic approach for retrieving argumentation from tweets about Brexit. We analyse two corpora, one from before the referendum in 2016 and one from early 2019. Our approach is based on the manual development of morphosyntactic corpus queries (in CQP syntax) that target specific argumentation patterns. For the present corpora we have developed 130 queries targeting 34 logical formulae. The paper showcases the query development and presents quantitative and qualitative results on how Brexit-related arguments have changed on Twitter from 2016 to 2019.},
+ address = {Amsterdam},
+ author = {Dykes, Nathan and Heinrich, Philipp and Evert, Stephanie},
+ booktitle = {{Broadening} the {Spectrum} of {Corpus} {Linguistics:} {New} approaches to variability and change},
+ doi = {10.1075/scl.105.08dyk},
+ editor = {Flach, Susanne and Hilpert, Martin},
+ isbn = {9789027212665},
+ pages = {229–256},
+ publisher = {John Benjamins Publishing Company},
+ series = {Studies in Corpus Linguistics},
+ title = {{Retrieving} {Twitter} argumentation with corpus queries and discourse analysis},
+ volume = {105},
+ year = {2022}
 }
 
-@InCollection{AdrianETC2020,
+@InCollection{AdrianCETC2020,
   author    = {Adrian, Christoph and Griebel, Tim and Heinrich, Philipp and Vollmann, Erik},
   title     = {{Will} the real populism (please) stand out? {Eine} interdisziplinäre {Aufarbeitung} populistischer {Tendenzen} in {Brexit-Tweets} im {Kontext} der {Europawahl} 2019},
   booktitle = {{Europawahlkampf} 2019: {Zur} {Rolle} der {Medien}},
@@ -128,66 +148,77 @@
   url       = {https://doi.org/10.1007/978-3-658-31472-9_9},
 }
 
-@InCollection{PfaffenbergerHeinrich2020,
-  author    = {Pfaffenberger, Fabian and Heinrich, Philipp},
-  title     = {{Die} überschätzte {Gefahr?} {Twitter-Bots} im {Europawahlkampf} 2019},
-  booktitle = {{Europawahlkampf} 2019: {Zur} {Rolle} der {Medien}},
-  publisher = {Springer Fachmedien},
+@incollection{PfaffenbergerHeinrich2020,
+ abstract = {Im Anbetracht der Debatte {\"u}ber die Relevanz und ausgehende Gefahr von Social Bots im politischen Kontext wurde untersucht, ob es eine nennenswerte Aktivit{\"a}t automatisierter Twitter-Accounts im Zusammenhang mit der Europawahl 2019 gab. Die Analyse bezieht sich auf deutsch- und englischsprachige Tweets aus der hei{\ss}en Phase des Europawahlkampfs und nutzt ein mehrstufiges Identifikations- und Validierungsverfahren f{\"u}r Bot-{\"a}hnliche Aktivit{\"a}ten. Die Untersuchung st{\"u}tzt sich dabei nicht, wie viele andere Studien zur Bot-Klassifikation, auf rein parameterbasierte Verfahren, sondern nutzt einen inhaltsbasierten Nahduplikat-Erkennungsalgorithmus zur Identifikation auff{\"a}lliger Twitter-Accounts (mit einem hohen Anteil an Nahduplikaten). Insgesamt konnte diese Studie keine Bot-Netzwerke oder Cluster von h{\"o}chstwahrscheinlich automatisierten Accounts mit nennenswerter Aktivit{\"a}t im Sinne einer Verbreitung politischer Botschaften oder Beeinflussung von Debatten im Kontext der Europawahl erkennen. Es stellt sich somit die Frage, ob Bedeutung und Einfluss von Social Bots {\"u}bersch{\"a}tzt werden.},
+ address = {Wiesbaden},
+ author = {Pfaffenberger, Fabian and Heinrich, Philipp},
+ booktitle = {{Europawahlkampf} 2019: {Zur} {Rolle} der {Medien}},
+ date = {2021-02-03},
+ doi = {10.1007/978-3-658-31472-9_4},
+ editor = {Holtz-Bacha, Christina},
+ isbn = {978-3-658-31472-9},
+ pages = {115–148},
+ publisher = {Springer Fachmedien},
+ title = {{Die} überschätzte {Gefahr?} {Twitter-Bots} im {Europawahlkampf} 2019},
+ url = {https://doi.org/10.1007/978-3-658-31472-9_4},
+ year = {2020}
+}
+
+@InCollection{GriebelETC2020a,
+  author    = {Griebel, Tim and Evert, Stefan and Heinrich, Philipp},
+  title     = {Possibilities and Challenges of Corpus-Assisted Discourse Analyses of Austerity in the {United} {Kingdom}},
+  booktitle = {{Multimodal} {Approaches} to {Media} {Discourses:} {Reconstructing} the {Age} of {Austerity} in the {United} {Kingdom}},
+  publisher = {Routledge},
   year      = {2020},
-  editor    = {Holtz-Bacha, Christina},
-  pages     = {115–148},
-  address   = {Wiesbaden},
-  isbn      = {978-3-658-31472-9},
-  abstract  = {Im Anbetracht der Debatte {\"u}ber die Relevanz und ausgehende Gefahr von Social Bots im politischen Kontext wurde untersucht, ob es eine nennenswerte Aktivit{\"a}t automatisierter Twitter-Accounts im Zusammenhang mit der Europawahl 2019 gab. Die Analyse bezieht sich auf deutsch- und englischsprachige Tweets aus der hei{\ss}en Phase des Europawahlkampfs und nutzt ein mehrstufiges Identifikations- und Validierungsverfahren f{\"u}r Bot-{\"a}hnliche Aktivit{\"a}ten. Die Untersuchung st{\"u}tzt sich dabei nicht, wie viele andere Studien zur Bot-Klassifikation, auf rein parameterbasierte Verfahren, sondern nutzt einen inhaltsbasierten Nahduplikat-Erkennungsalgorithmus zur Identifikation auff{\"a}lliger Twitter-Accounts (mit einem hohen Anteil an Nahduplikaten). Insgesamt konnte diese Studie keine Bot-Netzwerke oder Cluster von h{\"o}chstwahrscheinlich automatisierten Accounts mit nennenswerter Aktivit{\"a}t im Sinne einer Verbreitung politischer Botschaften oder Beeinflussung von Debatten im Kontext der Europawahl erkennen. Es stellt sich somit die Frage, ob Bedeutung und Einfluss von Social Bots {\"u}bersch{\"a}tzt werden.},
-  date      = {2021-02-03},
-  doi       = {10.1007/978-3-658-31472-9_4},
-  url       = {https://doi.org/10.1007/978-3-658-31472-9_4},
+  editor    = {Griebel, Tim and Evert, Stefan and Heinrich, Philipp},
+  pages     = {1–10},
+  address   = {London},
+  date      = {2020-09-15},
+  url       = {https://www.routledge.com/Multimodal-Approaches-to-Media-Discourses-Reconstructing-the-Age-of-Austerity/Griebel-Evert-Heinrich/p/book/9780367332891},
 }
 
-@incollection{GriebelETC2020a,
- address = {London},
- author = {Griebel, Tim and Evert, Stefan and Heinrich, Philipp},
- booktitle = {{Multimodal} {Approaches} to {Media} {Discourses:} {Reconstructing} the {Age} of {Austerity} in the {United} {Kingdom}},
- date = {2020-09-15},
- editor = {Griebel, Tim and Evert, Stefan and Heinrich, Philipp},
+@InCollection{GriebelHeinrich2020,
+  author    = {Griebel, Tim and Heinrich, Philipp},
+  title     = {The Cultural Political Economy of {Brexit} in the Age of Austerity},
+  booktitle = {{Multimodal} {Approaches} to {Media} {Discourses:} {Reconstructing} the {Age} of {Austerity} in the {United} {Kingdom}},
+  publisher = {Routledge},
+  year      = {2020},
+  editor    = {Griebel, Tim and Evert, Stefan and Heinrich, Philipp},
+  pages     = {163–188},
+  address   = {London},
+  date      = {2020-09-15},
+  url       = {https://www.routledge.com/Multimodal-Approaches-to-Media-Discourses-Reconstructing-the-Age-of-Austerity/Griebel-Evert-Heinrich/p/book/9780367332891},
+}
+@incollection{PfaffenbergerETC2019,
+ address = {Wiesbaden},
+ author = {Pfaffenberger, Fabian and Adrian, Christoph and Heinrich, Philipp},
+ booktitle = {{Die} {(Massen-)Medien} im {Wahlkampf:} {Die} {Bundestagswahl} 2017},
+ date = {2019-02-08},
+ doi = {10.1007/978-3-658-24824-6_5},
+ editor = {Holtz-Bacha, Christina},
+ isbn = {978-3-658-24824-6},
+ pages = {97–124},
+ publisher = {Springer Fachmedien},
+ title = {{Was} bin ich – und wenn ja, wie viele?},
+ url = {https://doi.org/10.1007/978-3-658-24824-6_5},
+ year = {2019}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% inproceedings
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@inproceedings{AdrianETC2025,
+ address = {Vienna},
+ author = {Adrian, Axel and Doan Dang, Bao Minh and Evert, Stephanie and Heinrich, Philipp and Zilio, Leonardo},
+ booktitle = {{Der} {Mensch} im {Zentrum} – {KI,} {Ethik} \& {Recht,} {Tagungsband} des 28. {Internationalen} {Rechtsinformatik} {Symposions} {IRIS}},
+ editor = {Schweighofer, Erich and Eder, Stefan and Costantini, Federico and Schmautzer, Felix},
  pages = {1–10},
- publisher = {Routledge},
- title = {{Possibilities} and {Challenges} of {Corpus-Assisted} {Discourse} {Analyses} of {Austerity} in the {United} {Kingdom}},
- url = {https://www.routledge.com/Multimodal-Approaches-to-Media-Discourses-Reconstructing-the-Age-of-Austerity/Griebel-Evert-Heinrich/p/book/9780367332891},
- year = {2020}
-}
-
-@incollection{GriebelHeinrich2020,
- address = {London},
- author = {Griebel, Tim and Heinrich, Philipp},
- booktitle = {{Multimodal} {Approaches} to {Media} {Discourses:} {Reconstructing} the {Age} of {Austerity} in the {United} {Kingdom}},
- date = {2020-09-15},
- editor = {Griebel, Tim and Evert, Stefan and Heinrich, Philipp},
- pages = {163–188},
- publisher = {Routledge},
- title = {{The} {Cultural} {Political} {Economy} of {Brexit} in the {Age} of {Austerity}},
- url = {https://www.routledge.com/Multimodal-Approaches-to-Media-Discourses-Reconstructing-the-Age-of-Austerity/Griebel-Evert-Heinrich/p/book/9780367332891},
- year = {2020}
-}
-
-@InCollection{PfaffenbergerETC2019,
-  author    = {Pfaffenberger, Fabian and Adrian, Christoph and Heinrich, Philipp},
-  title     = {{Was} bin ich – und wenn ja, wie viele?},
-  booktitle = {{Die} {(Massen-)Medien} im {Wahlkampf:} {Die} {Bundestagswahl} 2017},
-  publisher = {Springer Fachmedien},
-  year      = {2019},
-  editor    = {Holtz-Bacha, Christina},
-  pages     = {97–124},
-  address   = {Wiesbaden},
-  isbn      = {978-3-658-24824-6},
-  date      = {2019-02-08},
-  doi       = {10.1007/978-3-658-24824-6_5},
-  url       = {https://doi.org/10.1007/978-3-658-24824-6_5},
+ title = {{Führen} {Unterschiede} in den {Sprachfassungen} der {KI-VO} zu unterschiedlichen technischen und juristischen {Interpretationen?} {Eine} {Untersuchung} anhand ausgewählter {Tatbestandsmerkmale}},
+ year = {2025}
 }
 
 @InProceedings{HeinrichETC2024a,
   author         = {Heinrich, Philipp and Blombach, Andreas and Doan Dang, Bao Minh and Zilio, Leonardo and Havenstein, Linda and Dykes, Nathan and Evert, Stephanie and Schäfer, Fabian},
-  title          = {{Automatic} {Identification} of {COVID-19-Related} {Conspiracy} {Narratives} in {German} {Telegram} {Channels} and {Chats}},
+  title          = {Automatic Identification of {COVID-19}-Related Conspiracy Narratives in {German} {Telegram} Channels and Chats},
   booktitle      = {{Proceedings} of the 2024 {Joint} {International} {Conference} on {Computational} {Linguistics,} {Language} {Resources} and {Evaluation} {(LREC-COLING} 2024)},
   year           = {2024},
   editor         = {Nicoletta Calzolari, Min-Yen Kan, Veronique Hoste, Alessandro Lenci, Sakriani Sakti, Nianwen Xue},
@@ -195,6 +226,7 @@
   address        = {Torino, Italy},
   date           = {2024-05-23},
   faupublication = {yes},
+  file           = {HeinrichETC2024a.pdf:pdf/HeinrichETC2024a.pdf:PDF},
   keywords       = {COVID-19; user-generated content; zero-shot text classification; few-shot text classification},
   peerreviewed   = {Yes},
   url            = {https://aclanthology.org/2024.lrec-main.173},
@@ -202,7 +234,7 @@
 
 @InProceedings{DykesETC2024a,
   author    = {Dykes, Nathan and Evert, Stephanie and Heinrich, Philipp and Humml, Merlin and Schröder, Lutz},
-  title     = {{Leveraging} {High-Precision} {Corpus} {Queries} for {Text} {Classification} via {Large} {Language} {Models}},
+  title     = {Leveraging High-Precision Corpus Queries for Text Classification via Large Language Models},
   booktitle = {{Proceedings} of the {First} {Workshop} on {Language-driven} {Deliberation} {Technology} {(DELITE)} @ {LREC-COLING} 2024},
   year      = {2024},
   editor    = {Hautli-Janisz, Annette and Lapesa, Gabriella and Anastasiou, Lucas and Gold, Valentin and Liddo, Anna De and Reed, Chris},
@@ -211,22 +243,38 @@
   publisher = {ELRA and ICCL},
   abstract  = {We use query results from manually designed corpus queries for fine-tuning an LLM to identify argumentative fragments as a text mining task. The resulting model outperforms both an LLM fine-tuned on a relatively large manually annotated gold standard of tweets as well as a rule-based approach. This proof-of-concept study demonstrates the usefulness of corpus queries to generate training data for complex text categorisation tasks, especially if the targeted category has low prevalence (so that a manually annotated gold standard contains only a small number of positive examples).},
   date      = {2024-05-20},
+  file      = {DykesETC2024a.pdf:pdf/DykesETC2024a.pdf:PDF},
   url       = {https://aclanthology.org/2024.delite-1.7},
 }
+@inproceedings{AdrianETC2024,
+ address = {Salzburg, Austria},
+ author = {Adrian, Axel and Evert, Stephanie and Heinrich, Philipp and Keuchen, Michael},
+ booktitle = {{Sprachmodelle:} {Juristische} {Papageien} oder mehr? -- {Tagungsband} des 27. {Internationalen} {Rechtsinformatik} {Symposions} {IRIS} 2024},
+ editor = {Schweighofer, Erich and Eder, Stefan and Costantini, Federico and Schmautzer, Felix and Pfister, Jonas},
+ pages = {205–215},
+ title = {{Auslegung} des {KI-VO-E} zur {Evaluation} von {Verfahren} der {Künstlichen} {Intelligenz} am {Beispiel} der automatischen {Anonymisierung} von {Gerichtsentscheidungen}},
+ year = {2024}
+}
 
-@InProceedings{AdrianETC2024,
-  author    = {Adrian, Axel and Evert, Stephanie and Heinrich, Philipp and Keuchen, Michael},
-  title     = {{Auslegung} des {KI-VO-E} zur {Evaluation} von {Verfahren} der {Künstlichen} {Intelligenz} am {Beispiel} der automatischen {Anonymisierung} von {Gerichtsentscheidungen}},
-  booktitle = {{Sprachmodelle:} {Juristische} {Papageien} oder mehr? -- {Tagungsband} des 27. {Internationalen} {Rechtsinformatik} {Symposions} {IRIS} 2024},
+@InProceedings{DykesETC2024b,
+  author    = {Dykes, Nathan and Evert, Stephanie and Heinrich, Philipp and Humml, Merlin and Schröder, Lutz},
+  title     = {Finding Argument Fragments on Social Media with Corpus Queries and {LLMs}},
+  booktitle = {{Robust} {Argumentation} {Machines:} {First} {International} {Conference,} {RATIO} 2024, {Bielefeld,} {Germany,} {June} 5–7, 2024, {Proceedings}},
   year      = {2024},
-  editor    = {Schweighofer, Erich and Eder, Stefan and Costantini, Federico and Schmautzer, Felix and Pfister, Jonas},
-  pages     = {205–215},
-  address   = {Salzburg, Austria},
+  editor    = {Cimiano, Philipp and Frank, Anette and Kohlhase, Michael and Stein, Benno},
+  volume    = {14638},
+  series    = {Lecture Notes in Computer Science, Lecture Notes in Artificial Intelligence},
+  pages     = {163–181},
+  address   = {Bielefeld},
+  publisher = {Springer Nature},
+  note      = {Open access},
+  doi       = {10.1007/978-3-031-63536-6_10},
+  url       = {https://link.springer.com/chapter/10.1007/978-3-031-63536-6_10},
 }
 
 @InProceedings{HeinrichEvert2024,
   author    = {Heinrich, Philipp and Evert, Stephanie},
-  title     = {{Operationalising} the {Hermeneutic} {Grouping} {Process} in {Corpus-assisted} {Discourse} {Studies}},
+  title     = {Operationalising the Hermeneutic Grouping Process in Corpus-assisted Discourse Studies},
   booktitle = {{Proceedings} of the 4th {Workshop} on {Computational} {Linguistics} for the {Political} and {Social} {Sciences:} {Long} and short papers},
   year      = {2024},
   editor    = {Klamm, Christopher and Lapesa, Gabriella and Ponzetto, Simone Paolo and Rehbein, Ines and Sen, Indira},
@@ -235,6 +283,7 @@
   month     = {September},
   publisher = {Association for Computational Linguistics},
   abstract  = {We propose a framework for quantitative-qualitative research in corpus-assisted discourse studies (CADS), which operationalises the central process of manually forming groups of related words and phrases in terms of {``}discoursemes{''} and their constellations. We introduce an open-source implementation of this framework in the form of a REST API based on Corpus Workbench. Going through the workflow of a collocation analysis for fleeing and related terms in the German Federal Parliament, the paper gives details about the underlying algorithms, with available parameters and further possible choices. We also address multi-word units (which are often disregarded by CADS tools), a semantic map visualisation of collocations, and how to compute assocations between discoursemes.},
+  file      = {HeinrichEvert2024.pdf:pdf/HeinrichEvert2024.pdf:PDF},
   url       = {https://aclanthology.org/2024.cpss-1.3},
 }
 @inproceedings{AdrianETC2023,
@@ -250,7 +299,7 @@
  year = {2023}
 }
 
-@InProceedings{AdrianAETC2021,
+@InProceedings{AdrianETC2021,
   author    = {Adrian, Axel and Evert, Stefan and Keuchen, Michael and Heinrich, Philipp and Dykes, Natalie},
   title     = {{Anonymisierung} von {Gerichtsurteilen} – {Eine} wesentliche {Voraussetzung} für {E-Justice}},
   booktitle = {{Cybergovernance,} {Tagungsband} des 24. {Internationalen} {Rechtsinformatik} {Symposiums} {IRIS} 2021},
@@ -262,25 +311,24 @@
 
 @InProceedings{ArastehETC2021,
   author    = {Arasteh, Soroosh Tayebi and Monajem, Mehrpad and Christlein, Vincent and Heinrich, Philipp and Nicolaou, Anguelos and Boldaji, Hamidreza Nader and Lotfinia, Mahshad and Evert, Stefan},
-  title     = {{How} {Will} {Your} {Tweet} {Be} {Received?} {Predicting} the {Sentiment} {Polarity} of {Tweet} {Replies}},
+  title     = {How Will Your {Tweet} Be Received? {Predicting} the Sentiment Polarity of {Tweet} Replies},
   booktitle = {2021 {IEEE} 15th {International} {Conference} on {Semantic} {Computing} {(ICSC)}},
   year      = {2021},
   pages     = {370–373},
   address   = {Laguna Hills, CA, USA},
   doi       = {10.1109/ICSC50631.2021.00068},
 }
-
-@InProceedings{BlombachETC2020,
-  author    = {Blombach, Andreas and Dykes, Natalie and Heinrich, Philipp and Kabashi, Besim and Proisl, Thomas},
-  title     = {{A} {Corpus} of {German} {Reddit} {Exchanges} {(GeRedE)}},
-  booktitle = {{Proceedings} of the 12th {Language} {Resources} and {Evaluation} {Conference}},
-  year      = {2020},
-  pages     = {6310–6316},
-  address   = {Marseille, France},
-  month     = {May},
-  publisher = {European Language Resources Association},
-  abstract  = {GeRedE is a 270 million token German CMC corpus containing approximately 380,000 submissions and 6,800,000 comments posted on Reddit between 2010 and 2018. Reddit is a popular online platform combining social news aggregation, discussion and micro-blogging. Starting from a large, freely available data set, the paper describes our approach to filter out German data and further pre-processing steps, as well as which metadata and annotation layers have been included so far. We explore the Reddit sphere, what makes the German data linguistically peculiar, and how some of the communities within Reddit differ from one another. The CWB-indexed version of our final corpus is available via CQPweb, and all our processing scripts as well as all manual annotation and automatic language classification can be downloaded from GitHub.},
-  url       = {https://www.aclweb.org/anthology/2020.lrec-1.774},
+@inproceedings{BlombachETC2020,
+ abstract = {GeRedE is a 270 million token German CMC corpus containing approximately 380,000 submissions and 6,800,000 comments posted on Reddit between 2010 and 2018. Reddit is a popular online platform combining social news aggregation, discussion and micro-blogging. Starting from a large, freely available data set, the paper describes our approach to filter out German data and further pre-processing steps, as well as which metadata and annotation layers have been included so far. We explore the Reddit sphere, what makes the German data linguistically peculiar, and how some of the communities within Reddit differ from one another. The CWB-indexed version of our final corpus is available via CQPweb, and all our processing scripts as well as all manual annotation and automatic language classification can be downloaded from GitHub.},
+ address = {Marseille, France},
+ author = {Blombach, Andreas and Dykes, Natalie and Heinrich, Philipp and Kabashi, Besim and Proisl, Thomas},
+ booktitle = {{Proceedings} of the 12th {Language} {Resources} and {Evaluation} {Conference}},
+ month = {May},
+ pages = {6310–6316},
+ publisher = {European Language Resources Association},
+ title = {{A} {Corpus} of {German} {Reddit} {Exchanges} {(GeRedE)}},
+ url = {https://www.aclweb.org/anthology/2020.lrec-1.774},
+ year = {2020}
 }
 
 @inproceedings{DykesETC2020b,
@@ -295,22 +343,22 @@
  year = {2020}
 }
 
-@InProceedings{EvertETC2020,
-  author    = {Evert, Stefan and Harlamov, Oleg and Heinrich, Philipp and Banski, Piotr},
-  title     = {{Corpus} {Query} {Lingua} {Franca} part {II:} {Ontology}},
-  booktitle = {{Proceedings} of the 12th {Language} {Resources} and {Evaluation} {Conference}},
-  year      = {2020},
-  pages     = {3346–3352},
-  address   = {Marseille, France},
-  month     = {May},
-  publisher = {European Language Resources Association},
-  abstract  = {The present paper outlines the projected second part of the Corpus Query Lingua Franca (CQLF) family of standards: CQLF Ontology, which is currently in the process of standardization at the International Standards Organization (ISO), in its Technical Committee 37, Subcommittee 4 (TC37SC4) and its national mirrors. The first part of the family, ISO 24623-1 (henceforth CQLF Metamodel), was successfully adopted as an international standard at the beginning of 2018. The present paper reflects the state of the CQLF Ontology at the moment of submission for the Committee Draft ballot. We provide a brief overview of the CQLF Metamodel, present the assumptions and aims of the CQLF Ontology, its basic structure, and its potential extended applications. The full ontology is expected to emerge from a community process, starting from an initial version created by the authors of the present paper.},
-  url       = {https://www.aclweb.org/anthology/2020.lrec-1.410},
+@inproceedings{EvertETC2020,
+ abstract = {The present paper outlines the projected second part of the Corpus Query Lingua Franca (CQLF) family of standards: CQLF Ontology, which is currently in the process of standardization at the International Standards Organization (ISO), in its Technical Committee 37, Subcommittee 4 (TC37SC4) and its national mirrors. The first part of the family, ISO 24623-1 (henceforth CQLF Metamodel), was successfully adopted as an international standard at the beginning of 2018. The present paper reflects the state of the CQLF Ontology at the moment of submission for the Committee Draft ballot. We provide a brief overview of the CQLF Metamodel, present the assumptions and aims of the CQLF Ontology, its basic structure, and its potential extended applications. The full ontology is expected to emerge from a community process, starting from an initial version created by the authors of the present paper.},
+ address = {Marseille, France},
+ author = {Evert, Stefan and Harlamov, Oleg and Heinrich, Philipp and Banski, Piotr},
+ booktitle = {{Proceedings} of the 12th {Language} {Resources} and {Evaluation} {Conference}},
+ month = {May},
+ pages = {3346–3352},
+ publisher = {European Language Resources Association},
+ title = {{Corpus} {Query} {Lingua} {Franca} part {II:} {Ontology}},
+ url = {https://www.aclweb.org/anthology/2020.lrec-1.410},
+ year = {2020}
 }
 
 @InProceedings{ProislETC2020,
   author    = {Proisl, Thomas and Dykes, Natalie and Heinrich, Philipp and Kabashi, Besim and Blombach, Andreas and Evert, Stefan},
-  title     = {{EmpiriST} {Corpus} 2.0: {Adding} {Manual} {Normalization,} {Lemmatization} and {Semantic} {Tagging} to a {German} {Web} and {CMC} {Corpus}},
+  title     = {{EmpiriST} Corpus 2.0: Adding Manual Normalization, Lemmatization and Semantic Tagging to a {German} Web and {CMC} Corpus},
   booktitle = {{Proceedings} of {The} 12th {Language} {Resources} and {Evaluation} {Conference}},
   year      = {2020},
   pages     = {6142–6148},
@@ -323,7 +371,7 @@
 
 @InProceedings{BlombachETC2019,
   author    = {Blombach, Andreas and Dykes, Natalie and Evert, Stefan and Heinrich, Philipp and Kabashi, Besim and Proisl, Thomas},
-  title     = {{A} {New} {German} {Reddit} {Corpus}},
+  title     = {A New {German} {Reddit} Corpus},
   booktitle = {{Proceedings} of the 15th {Conference} on {Natural} {Language} {Processing} {(KONVENS} 2019): {Kaleidoscope} {Abstracts}},
   year      = {2019},
   pages     = {278–279},
@@ -333,7 +381,7 @@
 
 @InProceedings{Heinrich2018,
   author    = {Heinrich, Philipp},
-  title     = {{Stylistic} {Features} in {Corporate} {Disclosures} and their {Predictive} {Power}},
+  title     = {Stylistic Features in Corporate Disclosures and their Predictive Power},
   booktitle = {{Proceedings} of 4th {Asia} {Pacific} {Corpus} {Linguistics} {Conference} {(APCLC2018)}},
   year      = {2018},
   editor    = {Yukio Tono and Hitoshi Isahara},
@@ -344,7 +392,7 @@
 
 @InProceedings{HeinrichSchaefer2018,
   author    = {Heinrich, Philipp and Schäfer, Fabian},
-  title     = {{Extending} {Corpus-Based} {Discourse} {Analysis} for {Exploring} {Japanese} {Social} {Media}},
+  title     = {Extending Corpus-Based Discourse Analysis for Exploring {Japanese} Social Media},
   booktitle = {{Proceedings} of 4th {Asia} {Pacific} {Corpus} {Linguistics} {Conference} {(APCLC2018)}},
   year      = {2018},
   editor    = {Yukio Tono and Hitoshi Isahara},
@@ -355,7 +403,7 @@
 
 @InProceedings{HeinrichETC2018,
   author    = {Heinrich, Philipp and Adrian, Christoph and Kalashnikova, Olena and Schäfer, Fabian and Evert, Stefan},
-  title     = {{A} {Transnational} {Analysis} of {News} and {Tweets} about {Nuclear} {Phase-Out} in the {Aftermath} of the {Fukushima} {Incident}},
+  title     = {A Transnational Analysis of News and {Tweets} about Nuclear Phase-Out in the Aftermath of the {Fukushima} Incident},
   booktitle = {{Proceedings} of the {LREC} 2018 {``Workshop} on {Computational} {Impact} {Detection} from {Text} {Data''}},
   year      = {2018},
   editor    = {Andreas Witt and Jana Diesner and Georg Rehm},
@@ -363,13 +411,14 @@
   address   = {Paris},
   publisher = {ELRA},
   date      = {2018-05-08},
+  file      = {HeinrichETC2018.pdf:pdf/HeinrichETC2018.pdf:PDF},
   isbn      = {979-10-95546-05-4},
   location  = {Miyazaki, Japan},
 }
 
 @InProceedings{EvertETC2017,
   author    = {Evert, Stefan and Heinrich, Philipp and Henselmann, Klaus and Rabenstein, Ulrich and Scherr, Elisabeth and Schröder, Lutz},
-  title     = {{Combining} {Machine} {Learning} and {Semantic} {Features} in the {Classification} of {Corporate} {Disclosures}},
+  title     = {Combining Machine Learning and Semantic Features in the Classification of Corporate Disclosures},
   booktitle = {{Proceedings} of the {Workshop} on {Logic} and {Algorithms} in {Computational} {Linguistics} 2017 {(LACompLing2017)}},
   year      = {2017},
   editor    = {Loukanova, Roussanka and Liefke, Kristina},
@@ -381,13 +430,22 @@
   date      = {2017-08-16},
   url       = {http://su.diva-portal.org/smash/get/diva2:1140018/FULLTEXT04.pdf},
 }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% misc
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-@Misc{BlombachHeinrich2023_MANED,
-  author       = {Blombach, Andreas and Heinrich, Philipp},
-  title        = {{Tracking} down {Extremist} {Narratives} in {German} {Telegram} {Channels}},
-  howpublished = {Presentation at Methodological approaches to narratives in extremistic discourses. Düsseldorf, Germany},
-  year         = {2023},
-  date         = {2023-11-15},
+@Misc{AdrianETC2025_AnoSiDat,
+  author       = {Adrian, Axel and Evert, Stephanie and Doan Dang, Bao Minh and Heinrich, Philipp and Odorfer, Daniel and Rosa, Melanie and Shen, Pei-Yu and Unjum, Naveed and Werner, Julian},
+  title        = {{Robustness} of {Cross-Domain} {Anonymisation} of {Court} {Decisions}},
+  howpublished = {Poster presented at the Anonymisierung für eine sichere Datennutzung (AnoSiDat) Congress},
+  year         = {2025},
+}
+@misc{BlombachHeinrich2023_MANED,
+ author = {Blombach, Andreas and Heinrich, Philipp},
+ date = {2023-11-15},
+ howpublished = {Presentation at Methodological approaches to narratives in extremistic discourses. Düsseldorf, Germany},
+ title = {{Tracking} down {Extremist} {Narratives} in {German} {Telegram} {Channels}},
+ year = {2023}
 }
 @misc{BlombachHeinrich2023_SILM,
  author = {Blombach, Andreas and Heinrich, Philipp},
@@ -396,21 +454,19 @@
  title = {{Möglichkeiten} der computerlinguistischen {Erkennung} von {Narrativen} in {Texten}},
  year = {2023}
 }
-
-@Misc{DykesETC2022_CADS,
-  author       = {Dykes, Nathan and Blombach, Andreas and Havenstein, Linda and Heinrich, Philipp and Kabashi, Besim and Evert, Stephanie and Schäfer, Fabian},
-  title        = {{A} keyword categorisation study on {COVID-19} conspiracy discourse},
-  howpublished = {Presentation at VI Corpora \& Discourse International Conference (CADS 2022). Bologna, Italy},
-  year         = {2022},
-  date         = {2022-08-28},
+@misc{DykesETC2022_CADS,
+ author = {Dykes, Nathan and Blombach, Andreas and Havenstein, Linda and Heinrich, Philipp and Kabashi, Besim and Evert, Stephanie and Schäfer, Fabian},
+ date = {2022-08-28},
+ howpublished = {Presentation at VI Corpora \& Discourse International Conference (CADS 2022). Bologna, Italy},
+ title = {{A} keyword categorisation study on {COVID-19} conspiracy discourse},
+ year = {2022}
 }
-
-@Misc{DiwersyETC2022_MDP,
-  author       = {Diwersy, Sascha and Dykes, Nathan and Evert, Stephanie and Heinrich, Philipp and Luxardo, Giancarlo},
-  title        = {{Eine} korpuslinguistische {Analyse} der {Corona-Berichterstattung} in der deutschen und französischen {Presse}},
-  howpublished = {Presentation at Mots et Discours de la Pandémie. Heidelberg, Germany},
-  year         = {2022},
-  date         = {2022-06-28},
+@misc{DiwersyETC2022_MDP,
+ author = {Diwersy, Sascha and Dykes, Nathan and Evert, Stephanie and Heinrich, Philipp and Luxardo, Giancarlo},
+ date = {2022-06-28},
+ howpublished = {Presentation at Mots et Discours de la Pandémie. Heidelberg, Germany},
+ title = {{Eine} korpuslinguistische {Analyse} der {Corona-Berichterstattung} in der deutschen und französischen {Presse}},
+ year = {2022}
 }
 @misc{DykesETC2022_EPICS,
  author = {Dykes, Nathan and Blombach, Andreas and Heinrich, Philipp and Kabashi, Besim and Proisl, Thomas},
@@ -419,13 +475,12 @@
  title = {{Between} {Ridicule} and {Exasperation:} {A} corpus-based discourse analysis of {German} {Reddit} posts about {COVID-19} conspiracies},
  year = {2022}
 }
-
-@Misc{BlombachETC2021_ICAME,
-  author       = {Blombach, Andreas and Proisl, Thomas and Heinrich, Philipp and Evert, Stefan and Dykes, Natalie},
-  title        = {{Into} the {Perryverse:} {A} {CL} {Journey} to the {Realm} of {Lexical} {Complexity}},
-  howpublished = {Presentation at ICAME42 workshop: To boldly go},
-  year         = {2021},
-  date         = {2021-08-18},
+@misc{BlombachETC2021_ICAME,
+ author = {Blombach, Andreas and Proisl, Thomas and Heinrich, Philipp and Evert, Stefan and Dykes, Natalie},
+ date = {2021-08-18},
+ howpublished = {Presentation at ICAME42 workshop: To boldly go},
+ title = {{Into} the {Perryverse:} {A} {CL} {Journey} to the {Realm} of {Lexical} {Complexity}},
+ year = {2021}
 }
 @misc{DykesETC2021_CL,
  author = {Dykes, Natalie and Heinrich, Philipp and Evert, Stefan},
@@ -441,9 +496,9 @@
   howpublished = {Presentation at Corpus Linguistics 2021. Limerick, IE},
   year         = {2021},
   date         = {2021-07-14},
+  file         = {HeinrichETC2021_CL_slides.pdf:pdf/HeinrichETC2021_CL_slides.pdf:PDF},
   url          = {http://corpora.linguistik.uni-erlangen.de/data/cl2021_377_heinrich.html},
 }
-
 @misc{DykesETC2020_ICAME,
  author = {Dykes, Natalie and Heinrich, Philipp and Blombach, Andreas},
  howpublished = {Presentation at ICAME41. Heidelberg, Germany},
@@ -458,107 +513,118 @@
  title = {{EmpiriST} {Corpus} 2.0: {Adding} {Normalization,} {Lemmatization} and {Semantic} {Tags} to a {German} {Web} and {Social} {Media} {Corpus}},
  year = {2020}
 }
-
-@Misc{ProislHeinrich2019_ARD,
-  author       = {Proisl, Thomas and Heinrich, Philipp},
-  title        = {{NLP} for {German} {CMC} {Data}},
-  howpublished = {Presentation at Amazon Research Days 2019. Berlin, Germany},
-  year         = {2019},
-  date         = {2019-10-15},
+@misc{ProislHeinrich2019_ARD,
+ author = {Proisl, Thomas and Heinrich, Philipp},
+ date = {2019-10-15},
+ howpublished = {Presentation at Amazon Research Days 2019. Berlin, Germany},
+ title = {{NLP} for {German} {CMC} {Data}},
+ year = {2019}
 }
-
-@Misc{ProislETC2019_ANSC,
-  author       = {Proisl, Thomas and Dykes, Natalie and Blombach, Andreas and Heinrich, Philipp and Kabashi, Besim},
-  title        = {{NLP} for {German} {CMC} {Texts:} {Tokenization,} {POS} {Tagging,} and a {New} {Gold} {Standard} for {Lemmatization}},
-  howpublished = {Presentation at Annotation of Non-Standard Corpora. Bamberg, Germany},
-  year         = {2019},
-  date         = {2019-09-17},
+@misc{ProislETC2019_ANSC,
+ author = {Proisl, Thomas and Dykes, Natalie and Blombach, Andreas and Heinrich, Philipp and Kabashi, Besim},
+ date = {2019-09-17},
+ howpublished = {Presentation at Annotation of Non-Standard Corpora. Bamberg, Germany},
+ title = {{NLP} for {German} {CMC} {Texts:} {Tokenization,} {POS} {Tagging,} and a {New} {Gold} {Standard} for {Lemmatization}},
+ year = {2019}
 }
-
-@Misc{DykesETC2019_CL,
-  author       = {Dykes, Natalie and Evert, Stefan and Peters, Joachim and Heinrich, Philipp},
-  title        = {{Argumentation} is key: {A} keyword-based study of arguments in online discourse},
-  howpublished = {Presentation at Corpus Linguistics 2019. Cardiff, UK},
-  year         = {2019},
-  date         = {2019-07-22},
+@misc{DykesETC2019_CL,
+ author = {Dykes, Natalie and Evert, Stefan and Peters, Joachim and Heinrich, Philipp},
+ date = {2019-07-22},
+ howpublished = {Presentation at Corpus Linguistics 2019. Cardiff, UK},
+ title = {{Argumentation} is key: {A} keyword-based study of arguments in online discourse},
+ year = {2019}
 }
-
-@Misc{DykesETC2019_ECA,
-  author       = {Dykes, Natalie and Heinrich, Philipp and Evert, Stefan},
-  title        = {{Arguing} {Brexit} on {Twitter.} {A} corpus linguistic study},
-  howpublished = {Presentation at European Conference on Argumentation 2019. Groningen, Netherlands},
-  year         = {2019},
-  date         = {2019-06-27},
+@misc{DykesETC2019_ECA,
+ author = {Dykes, Natalie and Heinrich, Philipp and Evert, Stefan},
+ date = {2019-06-27},
+ howpublished = {Presentation at European Conference on Argumentation 2019. Groningen, Netherlands},
+ title = {{Arguing} {Brexit} on {Twitter.} {A} corpus linguistic study},
+ year = {2019}
 }
-
-@Misc{DykesETC2019_ICAME,
-  author       = {Dykes, Natalie and Heinrich, Philipp and Evert, Stefan},
-  title        = {{Reconstructing} {Twitter} arguments with corpus linguistics},
-  howpublished = {Presentation at ICAME40: Language in Time, Time in Language. Neuchâtel, Switzerland},
-  year         = {2019},
-  date         = {2019-06-03},
+@misc{DykesETC2019_ICAME,
+ author = {Dykes, Natalie and Heinrich, Philipp and Evert, Stefan},
+ date = {2019-06-03},
+ howpublished = {Presentation at ICAME40: Language in Time, Time in Language. Neuchâtel, Switzerland},
+ title = {{Reconstructing} {Twitter} arguments with corpus linguistics},
+ year = {2019}
 }
-
-@Misc{GoettlingerETC2019_RATIO,
-  author       = {Göttlinger, Merlin and Schröder, Lutz and Heinrich, Philipp and Dykes, Natalie and Evert, Stefan},
-  title        = {{Corpus} {Queries} for {Argumentation} {Mining}},
-  howpublished = {Presentation at the RATIO Symposium 2019. Bielefeld, Germany},
-  year         = {2019},
-  date         = {2019-05-28},
+@misc{GoettlingerETC2019_RATIO,
+ author = {Göttlinger, Merlin and Schröder, Lutz and Heinrich, Philipp and Dykes, Natalie and Evert, Stefan},
+ date = {2019-05-28},
+ howpublished = {Presentation at the RATIO Symposium 2019. Bielefeld, Germany},
+ title = {{Corpus} {Queries} for {Argumentation} {Mining}},
+ year = {2019}
 }
-
-@Misc{EvertHeinrich2019_GHWCLDH,
-  author       = {Evert, Stefan and Heinrich, Philipp},
-  title        = {{Introducing} {MMDA:} {An} interactive toolkit for {CDA}},
-  howpublished = {Presentation at the 7th Göttingen-Hildesheim-Workshop on Computational Linguistics and Digital Humanities: Digital Methods in Political Science. Göttingen, Germany},
-  year         = {2019},
-  date         = {2019-02-28},
+@misc{EvertHeinrich2019_GHWCLDH,
+ author = {Evert, Stefan and Heinrich, Philipp},
+ date = {2019-02-28},
+ howpublished = {Presentation at the 7th Göttingen-Hildesheim-Workshop on Computational Linguistics and Digital Humanities: Digital Methods in Political Science. Göttingen, Germany},
+ title = {{Introducing} {MMDA:} {An} interactive toolkit for {CDA}},
+ year = {2019}
 }
-
-@Misc{DiwersyETC2019_EUROPHRAS,
-  author       = {Diwersy, Sascha and Evert, Stefan and Heinrich, Philipp and Proisl, Thomas},
-  title        = {{Means} of {Productivity} – {On} the statistical modelling of the restrictedness of lexico-grammatical patterns},
-  howpublished = {Presentation at EUROPHRAS 2019. Santiago de Compostela, Spain},
-  year         = {2019},
-  date         = {2019-01-24},
+@misc{DiwersyETC2019_EUROPHRAS,
+ author = {Diwersy, Sascha and Evert, Stefan and Heinrich, Philipp and Proisl, Thomas},
+ date = {2019-01-24},
+ howpublished = {Presentation at EUROPHRAS 2019. Santiago de Compostela, Spain},
+ title = {{Means} of {Productivity} – {On} the statistical modelling of the restrictedness of lexico-grammatical patterns},
+ year = {2019}
 }
-
-@Misc{Heinrich2018_KAIST,
-  author       = {Heinrich, Philipp},
-  title        = {{Corpus-Based} {Discourse} {Analysis:} {Recent} {Developments} and {Future} {Directions}},
-  howpublished = {Presentation at KAIST. Seoul, Republic of Korea},
-  year         = {2018},
-  date         = {2018-10-01},
+@misc{Heinrich2018_KAIST,
+ author = {Heinrich, Philipp},
+ date = {2018-10-01},
+ howpublished = {Presentation at KAIST. Seoul, Republic of Korea},
+ title = {{Corpus-Based} {Discourse} {Analysis:} {Recent} {Developments} and {Future} {Directions}},
+ year = {2018}
 }
-
-@Misc{GriebelHeinrich2017_IPSA,
-  author       = {Griebel, Tim and Heinrich, Philipp},
-  title        = {{The} {Cultural} {Political} {Economy} of {Brexit} in the {Age} of {Austerity} – a {Corpus-Assisted} {Critical} {Realist} {Multimedia} {Discourse} {Analysis}},
-  howpublished = {Presentation at IPSA International Conference ``Political Science in the Digital Age: Mapping Opportunities, Perils and Uncertainties''. Hannover, Germany},
-  year         = {2017},
-  date         = {2017-12-05},
+@misc{GriebelHeinrich2017_IPSA,
+ author = {Griebel, Tim and Heinrich, Philipp},
+ date = {2017-12-05},
+ howpublished = {Presentation at IPSA International Conference ``Political Science in the Digital Age: Mapping Opportunities, Perils and Uncertainties''. Hannover, Germany},
+ title = {{The} {Cultural} {Political} {Economy} of {Brexit} in the {Age} of {Austerity} – a {Corpus-Assisted} {Critical} {Realist} {Multimedia} {Discourse} {Analysis}},
+ year = {2017}
 }
-
-@Misc{EvertETC2017_IC2S2,
-  author       = {Evert, Stefan and Heinrich, Philipp and Schäfer, Fabian},
-  title        = {{Social} {Bots} in {Japan's} 2014 {General} {Election:} {Preliminary} {Results} from a {Corpus-Linguistic} and {Qualitative} {Study} of {Computational} {Propaganda} on {Twitter}},
-  howpublished = {Presentation at the 3rd Annual International Conference on Computational Social Science, Cologne},
-  year         = {2017},
-  date         = {2017-07-13},
+@misc{EvertETC2017_IC2S2,
+ author = {Evert, Stefan and Heinrich, Philipp and Schäfer, Fabian},
+ date = {2017-07-13},
+ howpublished = {Presentation at the 3rd Annual International Conference on Computational Social Science, Cologne},
+ title = {{Social} {Bots} in {Japan's} 2014 {General} {Election:} {Preliminary} {Results} from a {Corpus-Linguistic} and {Qualitative} {Study} of {Computational} {Propaganda} on {Twitter}},
+ year = {2017}
 }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% proceedings
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@proceedings{CCL2019,
+ address = {Erlangen, Germany},
+ editor = {Chair of Computational Corpus Linguistics, FAU Erlangen-Nürnberg},
+ publisher = {German Society for Computational Linguistics \& Language Technology},
+ title = {{Proceedings} of the 15th {Conference} on {Natural} {Language} {Processing} {(KONVENS} 2019)},
+ url = {https://corpora.linguistik.uni-erlangen.de/data/konvens/proceedings/},
+ year = {2019}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% sharedtask
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-@Proceedings{CCL2019,
-  title     = {{Proceedings} of the 15th {Conference} on {Natural} {Language} {Processing} {(KONVENS} 2019)},
-  year      = {2019},
-  editor    = {Chair of Computational Corpus Linguistics, FAU Erlangen-Nürnberg},
-  address   = {Erlangen, Germany},
-  publisher = {German Society for Computational Linguistics \& Language Technology},
-  url       = {https://corpora.linguistik.uni-erlangen.de/data/konvens/proceedings/},
+@InProceedings{BlombachETC2025,
+  author    = {Blombach, Andreas and Doan Dang, Bao Minh and Evert, Stephanie and Fuchs, Tamara and Heinrich, Philipp and Kalashnikova, Olena and Unjum, Naveed},
+  title     = {{Narrlangen} at {SemEval-2025} {Task} 10: {Comparing} (mostly) simple multilingual approaches to narrative classification},
+  booktitle = {{Proceedings} of the 19th {International} {Workshop} on {Semantic} {Evaluation} {(SemEval-2025)}},
+  year      = {2025},
+  editor    = {Rosenthal, Sara and Ros{\'a}, Aiala and Ghosh, Debanjan and Zampieri, Marcos},
+  pages     = {2240–2248},
+  address   = {Vienna, Austria},
+  month     = {July},
+  publisher = {Association for Computational Linguistics},
+  note      = {SharedTask},
+  abstract  = {Our team focused on Subtask 2 (narrative classification) and tried several conceptually straightforward approaches: (1) prompt engineering of LLMs, (2) a zero-shot approach based on sentence similarities, (3) direct classification of fine-grained labels using SetFit, (4) fine-tuning encoder models on fine-grained labels, and (5) hierarchical classification using encoder models with two different classification heads. We list results for all systems on the development set, which show that the best approach was to fine-tune a pre-trained multilingual model, XLM-RoBERTa, with two additional linear layers and a softmax as classification head.},
+  file      = {BlombachETC2025.pdf:pdf/BlombachETC2025.pdf:PDF},
+  isbn      = {979-8-89176-273-2},
+  url       = {https://aclanthology.org/2025.semeval-1.291/},
 }
 
 @InProceedings{ProislETC2019,
   author    = {Proisl, Thomas and Uhrig, Peter and Heinrich, Philipp and Blombach, Andreas and Mammerella, Sefora and Dykes, Natalie and Kabashi, Besim},
-  title     = {{The\_Illiterati:} {Part-of-Speech} {Tagging} for {Magahi} and {Bhojpuri} {Without} {Even} {Knowing} the {Alphabet}},
+  title     = {{The\_Illiterati:} {Part-of-Speech} Tagging for {Magahi} and {Bhojpuri} Without Even Knowing the Alphabet},
   booktitle = {{Proceedings} of the {First} {International} {Workshop} on {NLP} {Solutions} for {Under} {Resourced} {Languages} {(NSURL} 2019)},
   year      = {2019},
   pages     = {73–79},
@@ -570,7 +636,7 @@
 
 @InProceedings{ProislETC2018,
   author    = {Proisl, Thomas and Heinrich, Philipp and Kabashi, Besim and Evert, Stefan},
-  title     = {{EmotiKLUE} at {IEST} 2018: {Topic-Informed} {Classification} of {Implicit} {Emotions}},
+  title     = {{EmotiKLUE} at {IEST} 2018: Topic-Informed Classification of Implicit Emotions},
   booktitle = {{Proceedings} of the 9th {Workshop} on {Computational} {Approaches} to {Subjectivity,} {Sentiment} and {Social} {Media} {Analysis}},
   year      = {2018},
   editor    = {Balahur, Alexandra and Mohammad, Saif M. and Hoste, Veronique and Klinger, Roman},
@@ -584,7 +650,7 @@
 
 @InProceedings{ProislETC2017,
   author    = {Proisl, Thomas and Heinrich, Philipp and Evert, Stefan and Kabashi, Besim},
-  title     = {{Translation} {Inference} across {Dictionaries} via a {Combination} of {Graph-based} {Methods} and {Co-occurrence} {Statistics}},
+  title     = {Translation Inference across Dictionaries via a Combination of Graph-based Methods and Co-occurrence Statistics},
   booktitle = {{Proceedings} of the {LDK} 2017 {Workshops:} 1st {Workshop} on the {OntoLex} {Model} {(OntoLex-2017),} {Shared} {Task} on {Translation} {Inference} {Across} {Dictionaries} \& {Challenges} for {Wordnets}},
   year      = {2017},
   editor    = {McCrae, J. and Bond, F. and Buitelaar, P. and Cimiano, P. and Declerck, T. and Gracia, J. and Kernerman, I. and Ponsoda, E. and Ordan, N. and Piasecki, M.},
@@ -597,42 +663,36 @@
   date      = {2017-06-18},
 }
 
-@InProceedings{AdrianETC2025,
-  author    = {Adrian, Axel and Doan Dang, Bao Minh and Evert, Stephanie and Heinrich, Philipp and Zilio, Leonardo},
-  title     = {{Führen} {Unterschiede} in den {Sprachfassungen} der {KI-VO} zu unterschiedlichen technischen und juristischen {Interpretationen?} {Eine} {Untersuchung} anhand ausgewählter {Tatbestandsmerkmale}},
-  booktitle = {{Der} {Mensch} im {Zentrum} – {KI,} {Ethik} \& {Recht,} {Tagungsband} des 28. {Internationalen} {Rechtsinformatik} {Symposions} {IRIS}},
+@InCollection{EvertETC2025,
+  author    = {Evert, Stephanie and Weber, Timm and Bothe, Steffen and Heinrich, Philipp and Piperski, Alexander},
+  title     = {Data exploitation: Corpus queries},
+  booktitle = {Standards for Language Data and Infrastructures},
+  publisher = {De Gruyter},
   year      = {2025},
-  editor    = {Schweighofer, Erich and Eder, Stefan and Costantini, Federico and Schmautzer, Felix},
-  pages     = {1–10},
-  address   = {Vienna},
+  editor    = {Ba{\'n}ski, Piotr and Heid, Ulrich and Herzberg, Laura},
+  series    = {Digital Linguistics},
+  keywords  = {query / search, textbook},
 }
 
-@Article{HeinrichETC2024b,
-  author  = {Heinrich, Philipp and Blombach, Andreas Blombach and Dykes, Nathan and Evert, Stephanie and Fuchs, Tamara and Havenstein, Linda and Schäfer, Fabian},
-  title   = {{From} {Linguistic} to {Discursive} {Patterns:} {Introducing} {Discoursemes} as a {Basic} {Unit} of {Discourse} {Analysis}},
-  journal = {CADAAD Journal},
-  year    = {2024},
-  volume  = {16},
-  number  = {2},
-  pages   = {87–111},
-  month   = {Dec.},
-  doi     = {10.21827/cadaad.16.2.42457},
-  url     = {https://ugp.rug.nl/cadaad/article/view/42457},
+@InProceedings{BlombachETC2025b,
+  author    = {Blombach, Andreas and Evert, Stephanie and Havenstein, Linda and Heinrich, Philipp},
+  title     = {Dimensions of Drivel in {German} {Telegram} Posts: Manual Annotation and Predictive Power},
+  booktitle = {Proceedings of CMC 2025},
+  year      = {2025},
+  pages     = {50--54},
+  url       = {https://doi.org/10.15495/EPub_UBT_00008705},
 }
 
-@InProceedings{BlombachETC2025,
-  author    = {Blombach, Andreas and Doan Dang, Bao Minh and Evert, Stephanie and Fuchs, Tamara and Heinrich, Philipp and Kalashnikova, Olena and Unjum, Naveed},
-  title     = {{Narrlangen} at {SemEval-2025} {Task} 10: {Comparing} (mostly) simple multilingual approaches to narrative classification},
-  booktitle = {{Proceedings} of the 19th {International} {Workshop} on {Semantic} {Evaluation} {(SemEval-2025)}},
-  year      = {2025},
-  editor    = {Rosenthal, Sara and Ros{\'a}, Aiala and Ghosh, Debanjan and Zampieri, Marcos},
-  pages     = {2240–2248},
-  address   = {Vienna, Austria},
-  month     = {July},
-  publisher = {Association for Computational Linguistics},
-  abstract  = {Our team focused on Subtask 2 (narrative classification) and tried several conceptually straightforward approaches: (1) prompt engineering of LLMs, (2) a zero-shot approach based on sentence similarities, (3) direct classification of fine-grained labels using SetFit, (4) fine-tuning encoder models on fine-grained labels, and (5) hierarchical classification using encoder models with two different classification heads. We list results for all systems on the development set, which show that the best approach was to fine-tune a pre-trained multilingual model, XLM-RoBERTa, with two additional linear layers and a softmax as classification head.},
-  isbn      = {979-8-89176-273-2},
-  url       = {https://aclanthology.org/2025.semeval-1.291/},
+@Article{HeinrichETC2026,
+  author  = {Heinrich, Philipp and Blombach, Andreas and Evert, Stephanie and Schäfer, Fabian},
+  title   = {Narratives and Linguistic Features of Drivel},
+  journal = {Datenbank-Spektrum},
+  year    = {2026},
+  volume  = {Trends in Narrative Analysis},
+  pages   = {5--14},
+  doi     = {https://www.doi.org/10.1007/s13222-026-00528-w},
+  file    = {HeinrichETC2026.pdf:pdf/HeinrichETC2026.pdf:PDF},
+  url     = {https://rdcu.be/e1X3C},
 }
 
 @Misc{AdrianETC2024_AnoSiDat,
@@ -642,20 +702,44 @@
   year         = {2024},
 }
 
-@InProceedings{DykesETC2024b,
-  author    = {Dykes, Nathan and Evert, Stephanie and Heinrich, Philipp and Humml, Merlin and Schröder, Lutz},
-  title     = {{Finding} {Argument} {Fragments} on {Social} {Media} with {Corpus} {Queries} and {LLMs}},
-  booktitle = {{Robust} {Argumentation} {Machines:} {First} {International} {Conference,} {RATIO} 2024, {Bielefeld,} {Germany,} {June} 5–7, 2024, {Proceedings}},
-  year      = {2024},
-  editor    = {Cimiano, Philipp and Frank, Anette and Kohlhase, Michael and Stein, Benno},
-  volume    = {14638},
-  series    = {Lecture Notes in Computer Science, Lecture Notes in Artificial Intelligence},
-  pages     = {163–181},
-  address   = {Bielefeld},
-  publisher = {Springer Nature},
-  note      = {Open access},
-  doi       = {10.1007/978-3-031-63536-6_10},
-  url       = {https://link.springer.com/chapter/10.1007/978-3-031-63536-6_10},
+@Article{AdrianETC2025a,
+  author  = {Adrian, Axel and Evert, Stephanie and Doan Dang, Bao Minh and Heinrich, Philipp and Mantash, Mahdi and Odorfer, Daniel and Rosa, Melanie and Shen, Pei-Yu and Werner, Julian},
+  title   = {Robustheit und {Domänenanpassung} bei der automatischen {Anonymisierung} von {Gerichtsentscheidungen}},
+  journal = {Künstliche Intelligenz und Recht},
+  year    = {2025},
+  volume  = {2},
+  number  = {2},
+  pages   = {60--69},
+}
+
+@Article{AdrianETC2026,
+  author  = {Adrian, Axel and Evert, Stephanie and Heinrich, Philipp},
+  title   = {Anonymisierung von Gerichtentscheidungen},
+  journal = {Anwaltsblatt},
+  year    = {2026},
+  volume  = {2/2026},
+  pages   = {136--139},
+  month   = may,
+  url     = {https://anwaltsblatt.anwaltverein.de/de/anwaltsblatt/print-archiv?year=2026&file=files/anwaltsblatt.de/Archiv/2026/anwbl-2026-02-heft-s-097-192.pdf},
+}
+
+@Misc{Heinrich2026_GAL,
+  author       = {Heinrich, Philipp},
+  title        = {Flüchtlinge, Wirtschaftsmigranten, Fachkräfte: Eine qualitativ-quantitative Analyse von Nominations- und Perspektivierungsstrategien in Bundestagsdebatten},
+  howpublished = {Presentation at GAL Research School 2026},
+  month        = may,
+  year         = {2026},
+  file         = {Heinrich2026_GAL.pdf:pdf/Heinrich2026_GAL.pdf:PDF},
+}
+
+@Misc{EvertHeinrich2025_CL,
+  author       = {Evert, Stephanie and Heinrich, Philipp},
+  title        = {Discoursemes and mutlilingual embeddings as a technical basis for comparative discourse analysis},
+  howpublished = {Presentation at Corpus Linguistics 2025},
+  month        = jul,
+  year         = {2025},
+  date         = {2025-07-02},
+  file         = {EvertHeinrich2025_CL.pdf:pdf/EvertHeinrich2025_CL.pdf:PDF},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
