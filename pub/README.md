@@ -16,6 +16,7 @@
      + Articles in Conference Proceedings (inproceedings)
      + Edited Volumes (book, proceedings)
      + Articles in Collections (incollection)
-     + Shared Tasks (inproceedings + note = "SharedTask")
+     + Shared Tasks (inproceedings + note contains "SharedTask")
    - updates talks.html
-     + Talks and Presentations (misc)
+     + „Lange Nacht der Wissenschaften“ in Erlangen (misc + note contains "LNDW")
+     + Conferences and Workshops (misc)
