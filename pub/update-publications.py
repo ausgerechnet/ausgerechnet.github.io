@@ -80,7 +80,7 @@ def formatter(entry):
 
         if key in ["title", "booktitle"] and entry.get(key):
 
-            row = re.sub(r"[{}]", "", entry[key])
+            row = entry[key]
             words = row.split()
 
             row = " ".join([
@@ -96,7 +96,7 @@ def formatter(entry):
             row = re.sub("-", "–", row)
             entry[key] = row
 
-        entry[key] = re.sub(r"[{}]", "", entry[key])
+        entry[key] = re.sub(r"[{}\\]", "", entry[key])
 
     # add links
     links = "["
@@ -182,9 +182,8 @@ def book2html(e):
         author2html(author, [MY_NAME]),
         f"({e.get('year','')}).",
         f"<b>{e.get('title','')}</b>.",
-        e.get("address", ""),
-        ":",
-        e.get("publisher", ""),
+        e.get("address", "") + ":",
+        e.get("publisher", "") + ".",
         e.get('links')
     ]
 
@@ -198,8 +197,8 @@ def inproceedings2html(e):
         f"({e.get('year','')}).",
         f"<b>{e.get('title','')}</b>.",
         "In <i>" + e.get("booktitle", "") + "</i>,",
-        ("pages " + e.get("pages") if e.get("pages") else ""),
-        e.get("address", ""),
+        ("pages " + e.get("pages") + "." if e.get("pages") else ""),
+        e.get("address") + "." if e.get("address") else "",
         e.get('links')
     ]
 
@@ -213,10 +212,10 @@ def incollection2html(e):
         f"({e.get('year','')}).",
         f"<b>{e.get('title','')}</b>.",
         "In <i>" + e.get("booktitle", "") + "</i>,",
-        ("edited by " + author2html(e.get("editor"), [MY_NAME]) if e.get("editor") else ""),
-        ("pages " + e.get("pages") if e.get("pages") else ""),
-        e.get("address", ""),
-        e.get("publisher", ""),
+        ("edited by " + author2html(e.get("editor"), [MY_NAME]) + "," if e.get("editor") else ""),
+        ("pages " + e.get("pages") + "." if e.get("pages") else ""),
+        e.get("address") + ":" if e.get("address") else "",
+        e.get("publisher", "") + ".",
         e.get('links')
     ]
 
@@ -298,7 +297,7 @@ def enrich(entries):
         except:
             e["_year"] = 0
 
-        # month (NEW)
+        # month
         e["_month"] = parse_month(e.get("month"))
 
         # HTML
