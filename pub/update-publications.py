@@ -346,7 +346,8 @@ def build_index(entries):
 def build_talks(entries):
 
     lndw = []
-    misc = []
+    presentations = []
+    posters = []
 
     for e in entries:
         if e["ENTRYTYPE"].lower() != "misc":
@@ -357,12 +358,15 @@ def build_talks(entries):
         if "lndw" in note:
             e["DATE"] = e.get("note")
             lndw.append(e)
-        else:
-            misc.append(e)
+        elif "presentation" in note:
+            presentations.append(e)
+        elif "poster" in note:
+            posters.append(e)
 
     return {
-        "„Lange Nacht der Wissenschaften“ in Erlangen": sorted(lndw, key=lambda x: (x["_year"], x["_month"]), reverse=True),
-        "Conferences and Workshops": sorted(misc, key=lambda x: (x["_year"], x["_month"]), reverse=True),
+        "<i>Lange Nacht der Wissenschaften</i> in Erlangen": sorted(lndw, key=lambda x: (x["_year"], x["_month"]), reverse=True),
+        "Presentations": sorted(presentations, key=lambda x: (x["_year"], x["_month"]), reverse=True),
+        "Posters": sorted(posters, key=lambda x: (x["_year"], x["_month"]), reverse=True),
     }
 
 
